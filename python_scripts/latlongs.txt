@@ -1,0 +1,455 @@
+New York Hylan Blvd @ Seguine Ave	40.519074	-74.197126
+New York Hylan Blvd @ Richmond Ave	40.534297	-74.154032
+New York Hylan Blvd @ New Dorp Lane	40.570532	-74.109799
+New York FDR Dr @ 79 St	40.770294	-73.947748
+New York FDR Dr @ 73 St	40.766522	-73.951017
+New York FDR Dr @ 38 St	40.745754	-73.97042
+New York FDR Dr @ 23 St	40.735444	-73.975114
+New York FDR Dr @ 155 Street	40.722962	-73.97427
+New York FDR Dr @ 135 Street	40.722962	-73.97427
+New York FDR Dr @ 111 ST	40.791863	-73.93559
+New York FDR @ Jackson St	40.712784	-74.005941
+New York FDR Dr @ 96 Street	40.783037	-73.944046
+New York FDR Dr @ 90 St	40.736876	-73.974534
+New York MHB-17 Manh LRW @ X OVER	40.712784	-74.005941
+New York MHB-16A Manh East of Colonnade Entr	40.712784	-74.005941
+New York MHB -19 Manh N URDW @ Anch	40.712784	-74.005941
+New York Madison Ave @ 96 St	40.787232	-73.954159
+New York MHB-16 Manh Colonade Entr	40.712784	-74.005941
+New York MHB â€“ 32 Bklyn S URDW @ Anch	40.712784	-74.005941
+New York MADISON @ 57 ST	40.623757	-73.985529
+New York MADISON @ 34 ST	40.627961	-73.943253
+New York Madison Ave @ 49 St	40.757234	-73.976039
+New York Madison Ave @ 42 St	40.752817	-73.979294
+New York Rockaway Blvd @ Farmers Blvd	40.65966	-73.773952
+New York Rockaway Blvd @ Division St	40.637575	-73.740949
+New York 3 AVE @ 34 ST	40.745717	-73.978119
+New York 3 Ave @ 42 St	40.750773	-73.974458
+New York 207 ST @ 9 Ave	40.5595	-73.915973
+New York 3 Ave @ 23 St	40.738837	-73.98316
+New York 3 Ave @ 59 St	40.761556	-73.966592
+New York 3 Ave @ E 14 St	40.73328	-73.987196
+New York 3 Ave @ 49 St	40.75519	-73.971214
+New York 3 Ave @ 57 St	40.760263	-73.967556
+New York 5 Ave @ 34 St	40.748446	-73.984563
+New York 5 Ave @ 42 St	40.753488	-73.980894
+New York Queens Blvd Mid Span of QBB	40.733798	-73.872167
+New York Queens Blvd @ Van Dam	40.73986	-73.934594
+New York Atlantic Ave @ BQE	40.676258	-73.908299
+New York Belt Pkwy @ 158 St	40.623187	-74.041337
+New York Belt Pkwy @ 68 St	40.623187	-74.041337
+New York Belt Pkwy @ Bay 8th St	40.604595	-74.01802
+New York Belt Pkwy @ Erskine	40.651031	-73.867418
+New York Belt Pkwy @ Flatbush	40.631816	-73.883891
+New York Belt Pkwy @ Ocean Pkwy	40.632819	-73.882904
+New York Belt Pkwy @ Pennsylvania Ave	40.643751	-73.875633
+New York Belt Pkwy@ Cross Bay Blvd	40.666325	-73.842705
+New York Brooklyn Queens Expy @  Metropolitan Ave	40.716659	-73.949647
+New York Gowanus Expwy @ 79 Street	40.611499	-74.03093
+New York Flatbush Ave@ 6 Ave	40.68026	-73.974693
+New York Gowanus Expy @ 92 St	40.611499	-74.03093
+New York Gowanus Expwy btwn 6 & 7 Ave	40.712784	-74.005941
+New York Grand Army Plaza	40.764579	-73.973639
+New York Gowanus Expy @ Prospect Interchange	40.644995	-74.017298
+New York Northern Blvd @ Parsons Blvd	40.7647	-73.823498
+New York Northern Blvd @ Little Neck Pkwy	40.770635	-73.735449
+New York QBB @ Crescent St	40.712784	-74.005941
+New York Northern Blvd @ Union St	40.763867	-73.828154
+New York Northern Blvd @ 68 St	40.754257	-73.898102
+New York Northern Blvd @ 51 St	40.752974	-73.910245
+New York Northern Blvd @ Honeywell Bridge	40.752035	-73.931922
+New York Northern Blvd @ 97 St	40.756996	-73.871303
+New York WSE @ Arden Ave	40.545756	-74.178874
+New York WSE03 SB at Bloomingdale Rd-Ex3	41.957529	-88.080904
+New York West Shore Expy @ Arden Ave	40.566989	-74.193019
+New York West Shore Expy @ Victory Blvd	40.566989	-74.193019
+New York QBB LL CM @ East Channel	40.712784	-74.005941
+New York QBB LL CM @ 11 St	40.712784	-74.005941
+New York WSE04 SB at Rossville Ave - Ex4	40.712784	-74.005941
+New York Rockaway Blvd @ Guy Brewer Blvd	40.656279	-73.767392
+New York West St @ Canal St	40.721925	-74.011938
+New York West Houston @ Varick St	40.728602	-74.005318
+New York Amsterdam @ 72 St	40.75205	-73.894184
+New York 9 Ave @ 57 St	40.635861	-74.005584
+New York West Street @ Intrepid	43.003461	-76.128149
+New York West St @ West Houston St	40.729101	-74.010573
+New York Worth Street @ Bowery	40.715794	-74.003449
+New York Worth St @ Centre St	40.715171	-74.002122
+New York 9 Ave @ 30 St	40.75061	-73.998474
+New York 9 Ave @ 23 St	40.746265	-74.00164
+New York 8th Ave @ 23 St	40.745299	-73.998483
+New York 8 Ave @ Columbus Cr South	40.767705	-73.982046
+New York 9 Ave @ 49 St	40.640339	-74.000938
+New York 9 Ave @ 42 St	40.644266	-73.996844
+New York 9 Ave @ 37 St	40.647074	-73.993952
+New York 9 Ave @ 34 St	40.753155	-73.996628
+New York Rockaway Blvd @ Van Wyck Expy E S/R	40.674421	-73.802088
+New York Rockaway Blvd @ Van Wyck Expy W S/R	40.674421	-73.802088
+New York Cross Bay Blvd @ North Channel Bridge	40.590513	-73.819413
+New York Rockaway Blvd @ S. Conduit Ave	40.666761	-73.779818
+New York Springfield Ave @ Jamaica Ave	40.718419	-73.735317
+New York Springfield Blvd @ Merrick Blvd	40.680188	-73.753378
+New York S Conduit Ave @ 150 St	40.665685	-73.790886
+New York Seagirt Blvd @ B 9 St	40.596565	-73.744164
+New York Throgs Neck Bridge @ Queens Bound	40.796355	-73.79334
+New York Triborough Bridge Queens Bound	40.770791	-73.917707
+New York Henry Hudson @ 158 St	40.83137	-73.950923
+New York Grand Central Pkwy @ 37 Street	40.716096	-73.813157
+New York GR Brewer @ Belt	40.712784	-74.005941
+New York WBB-18 @ SOR Cntr Span	40.712784	-74.005941
+New York WBB-19 @ Bklyn Tower	40.712784	-74.005941
+New York WBB-2 @ NOR Bklyn-Driggs	40.712784	-74.005941
+New York WBB-4 @ NOR Bklyn-Mid Span	40.712784	-74.005941
+New York WBB-6 @ Delancy-Clinton	40.712784	-74.005941
+New York BRE04 WB at Bronx Rvr Pkwy Ex51	40.83705	-73.865429
+New York GCP @ 166 St	40.712784	-74.005941
+New York Farmers Blvd @ N Conduit Ave	40.667436	-73.766759
+New York GCP @ Astoria Blvd @ 49 St	40.712784	-74.005941
+New York GCP @ 214 St	40.712784	-74.005941
+New York GCP06 WB at 27th Ave - Ex6	40.712784	-74.005941
+New York GCP @ LGA 94 St Exit	40.712784	-74.005941
+New York GCP08 EB at Roosevelt Ave - Ex9	40.712784	-74.005941
+New York GCP07 EB at Ditmars Blvd - Ex9	40.712784	-74.005941
+New York Sutton Pl @ 58 St	40.758499	-73.961307
+New York Triborough Bridges @ Manhattan Bound	40.712784	-74.005941
+New York Brooklyn Bridge - Ped Walk Way	40.706086	-73.996864
+New York Van Wyck Expwy Btwn 115 Ave. & 116 Ave	40.712784	-74.005941
+New York Van Wyck Expwy @ Rockaway Blvd.	40.674421	-73.802088
+New York VWE08 NB at Foch Blvd - Ex2	40.712784	-74.005941
+New York Van Wyck Expy @ S Conduit Ave LL	40.702386	-73.816239
+New York Van Wyck Expwy @ Hillside Ave	40.704048	-73.817559
+New York Broadway @ 96 St	40.794624	-73.971669
+New York Van Wyck Expwy @ Queens Blvd.(entrance ramp)	40.712784	-74.005941
+New York Van Wyck Expwy @ Jackie Robinson Pkwy	40.712784	-74.005941
+New York Broadway @ Chambers St	40.714186	-74.006297
+New York Whitestone Expwy @ 14 Ave (Median)	40.712784	-74.005941
+New York Whitestone @ Queens Bound	40.792045	-73.809557
+New York Belt Pkwy @ Brookville Blvd	40.674798	-73.733316
+New York College Point Blvd @ Sanford Ave	40.754677	-73.833044
+New York Broadway @ 51 St	40.762071	-73.983676
+New York Beach Channel Dr @B Mott Ave	40.605327	-73.755238
+New York Broadway @ 169 Street	40.841679	-73.93928
+New York Amsterdam Ave @ 181 St	40.848188	-73.930847
+New York Amsterdam Ave @ 60 St	40.771034	-73.987104
+New York Amsterdam @ 86 St	40.779483	-73.955839
+New York Amsterdam Ave @ 125 St	40.813342	-73.956297
+New York Brooklyn Queens Expwyat Stewart Avenue	40.678178	-73.944158
+New York E 63 St @ QBB	40.712784	-74.005941
+New York East Broadway @ Essex St	40.719222	-73.987869
+New York East Houston St @ Ave B	40.721537	-73.983804
+New York East Houston St @ Ave D	40.719989	-73.978728
+New York FDR @ 120 St	40.736893	-73.974525
+New York FDR @ 48 St	40.751925	-73.965265
+New York FDR @ E 127 St	40.722962	-73.97427
+New York FDR @ E 53 St	40.742337	-73.972835
+New York FDR @ E 6 St	40.721564	-73.974759
+New York FDR @ Grand St	40.713214	-73.977595
+New York Grand St @ Broadway	40.720819	-74.000681
+New York Grand St @ Essex St	40.716708	-73.989149
+New York FDR Dr @ Brooklyn Bridge Exit NB	40.739888	-73.972718
+New York FDR Dr @ Brooklyn Bridge Exit SB	40.739888	-73.972718
+New York FDR Dr @ Old Slip	40.703186	-74.007836
+New York Ft Washington @ 178 St	40.848757	-73.939166
+New York Ft Washington @ 179 St	40.849347	-73.938938
+New York Ft Washinton @ 179 St	40.849347	-73.938938
+New York Grand St @ Allen St	40.717431	-73.991452
+New York Grand St @ Bowery	40.718457	-73.994819
+New York 2 Ave @ E 14 St	40.732326	-73.984954
+New York 2 Ave @ 59 St (QBB)	40.712784	-74.005941
+New York 2 Ave @ 58 St	40.759977	-73.964801
+New York 2 Ave @ 42 St	40.749823	-73.972205
+New York 2 Ave @ 36 St-Midtown Tunnel	40.712784	-74.005941
+New York 2 Ave @ 23 St	40.737889	-73.980905
+New York 12 Ave @ 57 St	40.771533	-73.994213
+New York 12 Ave @ 42 St	40.761973	-74.001077
+New York 12 Ave @ 34 St	40.756998	-74.004801
+New York 12 Ave @ 22 St	40.740085	-73.988742
+New York West Shore Expwy @ Woodrow Rd	40.566989	-74.193019
+New York West Shore Expwy @ Victory Blvd	40.566989	-74.193019
+New York Flatbush Ave @ Aviator Sports & Golf Club	40.62951	-73.944146
+New York Flatbush Ave @ Fillmore Ave	40.614692	-73.928047
+New York Flatbush Ave @ Kings Hwy	40.622393	-73.93665
+New York Flatbush Ave @ Marine Park	40.618578	-73.93247
+New York Cadman Plz E @ Prospect St	40.700738	-73.989726
+New York Cross Bay Blvd @  Wildlife Refuge	40.633201	-73.829356
+New York Cross Bay Blvd @ Rockaway Blvd	40.58571	-73.817173
+New York Flatbush Ave @ Ave U	40.609909	-73.922431
+New York Flatbush Ave @ Tillary St	40.696115	-73.984482
+New York Flatbush Ave @ Willoughby	40.691813	-73.966083
+New York Brooklyn Queens Expy @ Lee Ave	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Kent Ave	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Hamilton Ave	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Furman St UL	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Furman St LL	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Congress St	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Broadway St	40.712634	-73.9549
+New York Brooklyn Queens Expy @ Atlantic Ave	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Adams St	40.716659	-73.949647
+New York Brooklyn Queens Expy @ 31st Ave	40.716659	-73.949647
+New York Victory Blvd @ Bay St	40.637749	-74.076869
+New York Verrazano-Narrows @ Staten Island Bound	40.712784	-74.005941
+New York Houston St @ Broadway	40.72538	-73.996815
+New York West Shore Expwy @ Meredith Blvd.	40.566989	-74.193019
+New York QBB SOR @ Sutton Pl	40.712784	-74.005941
+New York QBB SOR @ W Channel	40.712784	-74.005941
+New York QBB UL @ Queens Pier	40.712784	-74.005941
+New York Qns Blvd @ 65 Ave	40.740844	-73.899639
+New York Qns Blvd @ 65 PL	40.740844	-73.899639
+New York Qns Blvd @ QnCnt Mall	40.712784	-74.005941
+New York Queens Blvd @ 39 ST	40.743875	-73.926181
+New York Queens Blvd @ 51 St	40.742826	-73.914017
+New York Queens Blvd @ Jackson Ave	40.748948	-73.937317
+New York Queens Blvd @ Skillman	40.747264	-73.928313
+New York Victory Blvd WOF Campus Dr	40.611841	-74.138447
+New York Victory Blvd @ Jersey St	40.635743	-74.083731
+New York West Shore Expwy @ Englewood Ave	40.566989	-74.193019
+New York West Shore Expwy @ Edward Curry Ave	40.566989	-74.193019
+New York Houston St @ Bowery St	40.724056	-73.992562
+New York West Shore Expwy @ Fresh Kills Creek	40.566989	-74.193019
+New York WBB-1 @ Bklyn Plaza	40.712784	-74.005941
+New York WBB-14 @ NIR Bklyn Kent Ave	40.712784	-74.005941
+New York BRE07 NB at Quincy Ave - Ex7B	40.7143528	-74.0059731
+New York Bronx River Pkwy @ 233 ST	40.804975	-73.84924
+New York Park Ave @ 57 St	40.761656	-73.970842
+New York Pearl St @ Dover	40.70946	-74.001709
+New York MHB-23 Manh LRDWY @ Twr	40.712784	-74.005941
+New York MHB-24 Manh S URDWY @ Twr	40.712784	-74.005941
+New York MHB-25 Manh S URW @ Twr Walkwy	40.712784	-74.005941
+New York Montgomergy @ South St	40.7107195	-73.9848094
+New York MHB-18 Manh LRW @ EOF X Over	40.712784	-74.005941
+New York MHB-20 Mahn S URW @ Anch	40.712784	-74.005941
+New York MHB-21 Manh N URDWY @ Arch	40.712784	-74.005941
+New York MHB-22 Manh N URDWY @ Twr	40.712784	-74.005941
+New York 12 Ave @ 14 St	40.719343	-74.005164
+New York 11 Ave @ 57 St	40.770312	-73.99139
+New York 1 Ave @ 96 St	40.783306	-73.944688
+New York 1 Ave @ 86 St	40.776876	-73.949374
+New York 1 Ave @ 42 St	40.748802	-73.969704
+New York 1 Ave @ 23 St	40.736884	-73.978526
+New York 11 Ave @ 42 St	40.760848	-73.998322
+New York 11 Ave @ 34 ST	40.755779	-74.001988
+New York 10 Ave @ 57 St	40.769119	-73.988559
+New York 1 Ave @ E 14 St	40.73134	-73.982566
+New York Van Wyck Expwy @ 101  Ave SB	40.712784	-74.005941
+New York Hamilton Ave @ Hamilton PL @ 15 St (S SR)	42.810218	-75.51829
+New York Van Wyck Expwy @ 109 Ave	40.686964	-73.808255
+New York Van Wyck Expwy @ 101 Ave NB	40.712784	-74.005941
+New York Van Wyck Expwy @ 133 Ave SB	40.712784	-74.005941
+New York Van Wyck Expwy @ 111 Ave	40.684557	-73.807078
+New York Van Wyck Expwy @ 91 Ave	40.699481	-73.81523
+New York Hamilton Ave @ Hamilton Pl @ 15 St (N SR)	40.76202	-73.988932
+New York Van Wyck Expwy @ Atlantic Ave	40.697255	-73.813994
+New York Van Wyck Expwy @ Alwick Rd SB	40.712784	-74.005941
+New York 7 Ave @ 49 St	40.760457	-73.983723
+New York Flatbush Ave and Atlantic Ave	40.684056	-73.977448
+New York 8 Ave @ 14 St	40.739743	-74.002529
+New York 8 Ave @ 34 St	40.752191	-73.993472
+New York 6 Ave @ West Houston St	40.728264	-74.002879
+New York 7 Ave @ 145 St	40.82169	-73.939159
+New York 7 Ave @ 23St	40.768204	-73.875163
+New York Flatbush Ave and 4 Ave	40.684919	-73.978067
+New York 8 Ave @ 42 St	40.757228	-73.989793
+New York 8 Ave @ 49 St	40.761662	-73.986563
+New York CVE04 SB at 48th Ave	40.712784	-74.005941
+New York Guy Brewer Blvd @ N Conduit Ave	40.667975	-73.771555
+New York Hillside Ave @ Little Neck Pkwy	40.73617	-73.713769
+New York Jackie Robinson Pkwy @ Queens Blvd	40.702601	-73.858846
+New York LIE @ College Point Blvd	40.780991	-73.845896
+New York Grand Central Pkwy @ 46 street	40.719856	-73.780985
+New York Grand Central Pkwy @ 72 Street	40.716207	-73.802183
+New York Grand Central Pkwy @ 75 Street	40.716099	-73.809944
+New York Grand Central Pkwy E/Connector @ 126 St	40.719733	-73.79056
+New York LIE @ Kissena Blvd	40.743483	-73.836568
+New York LIE @ Marathon Pkwy	40.743483	-73.836568
+New York Verrazano-Narrows @ Brooklyn Bound	40.712784	-74.005941
+New York Stillwell Ave @ Surf Ave	40.575551	-73.981181
+New York Stillwell Ave @ Neptune Ave	40.579219	-73.981946
+New York Sands St @ Brooklyn Bridge Ent	40.699829	-73.984956
+New York Sands St @ BQE Ent	40.699829	-73.984956
+New York Prospect Pkwy @ 3 Ave	40.666763	-73.994823
+New York Prospect Expy @ Caton Ave	40.657224	-73.982985
+New York Prospect Expy @ 9 Ave	41.0679326	-73.862231
+New York Prospect Expy @ 7 Ave	40.661472	-73.986127
+New York Prospect Expy @ 6 Ave	40.662804	-73.988322
+New York MLK Jr. Expwy @ Watchogue Rd	40.712784	-74.005941
+New York Outerbridge Crossing @ Tyrellan Ave	40.524817	-74.246857
+New York SIE @ Clove Rd	40.712784	-74.005941
+New York SIE @ Richmond Ave	40.712784	-74.005941
+New York Staten Island Expwy @ Bradley Ave	40.579532	-74.150201
+New York Staten Island Expwy @ Forest Ave	40.579532	-74.150201
+New York Staten Island Expwy @ Richmond Ave	40.579532	-74.150201
+New York Staten Island Expwy @ SIE/MLK Interchange	40.579532	-74.150201
+New York Staten Island Expwy @ Victory Blvd.	40.579532	-74.150201
+New York Staten Island Expwy @ W of South Ave	40.579532	-74.150201
+New York E 57 St @ QBB	40.712784	-74.005941
+New York Dyer @ 42 Street	40.758983	-73.993936
+New York Clearview Expy @ 35 St	40.7364	-73.767734
+New York College Point Blvd @ 35 Ave	40.763586	-73.836029
+New York College Point Blvd @ Roosevelt Ave	40.758097	-73.834199
+New York Holland Tunnel	40.724592	-74.00952
+New York Henry Hudson Pkwy @ 96 St	40.796608	-73.975657
+New York Henry Hudson Pkwy @ 70 St	40.899173	-73.896764
+New York Henry Hudson @ South Bound	40.712784	-74.005941
+New York Cross Bay Blvd @ 20 Rd	40.598898	-73.820766
+New York Henry Hudson @ 137 St	40.712784	-74.005941
+New York Harlem Rvr Dr (FDR) @ 166 St	40.712784	-74.005941
+New York Greenwich St @ Morris St	40.706208	-74.014371
+New York Church Street @ Vesey	40.712081	-74.010113
+New York Canal Street @ Chrystie Street	40.715866	-73.995047
+New York CPW @ 96 St	40.791676	-73.964702
+New York Columbus St @ 65 St	40.772983	-73.982042
+New York BQE40 WB at Northern Blvd - Ex41	40.712784	-74.005941
+New York Brooklyn Battery Tunnel @ West Street	40.703225	-74.015641
+New York Clearview @ Northern Blvd	40.758568	-73.79712
+New York Clearview Expy @ 26th Ave	40.776242	-73.784068
+New York Canal Street @ Allen Street	40.715138	-73.992641
+New York Brooklyn Bridge @ Centre Street	40.711429	-74.003313
+New York Van Wyck Expwy @ Foch Blvd. SB	40.712784	-74.005941
+New York Brooklyn Queens Expy @ Sackett St	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Middagh St UL	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Middagh St LL	40.716659	-73.949647
+New York Brooklyn Queens Expy @ Manhattan Ave	40.71743	-73.948718
+New York Brooklyn Queens Expy @ Union St	40.717644	-73.817016
+New York Brooklyn Queens Expy @ State St UL	40.716659	-73.949647
+New York Brooklyn Queens Expy @ South 5th St	40.690221	-73.998785
+New York Brooklyn Queens Expy @ Sands St	40.716659	-73.949647
+New York Brooklyn-Battery Tunnel @ Brooklyn Side	40.678494	-74.003047
+New York Brooklyn Queens Expy @ Wythe Ave	40.716659	-73.949647
+New York Third Ave Bridge	40.807587	-73.932473
+New York Triborough Bridge Bronx Bound	40.800805	-73.917651
+New York Pelham Pkwy E/B @ Boston Rd	40.858455	-73.8678
+New York Pelham Shore Rd @ City Island Rd	40.864449	-73.813321
+New York NE Thruway @ Conner St	40.884135	-73.826113
+New York New Eng Thru @ Bartow	40.712784	-74.005941
+New York Major Deegan @ Triboro Bridge	40.712784	-74.005941
+New York Major Deegan Expy @ N of Alex Hamilton Bridge	40.861255	-73.913433
+New York Rockaway Blvd @ Brookville Blvd	40.638631	-73.741566
+New York Rockaway Blvd @ Baisley Blvd	40.672438	-73.785725
+New York Queens Plz S @ 27 St	40.750175	-73.939849
+New York Queens Plaza North @ 2811 (Westside)	40.750226	-73.938488
+New York Queens Plaza N @ Northern Blvd	40.761551	-73.760437
+New York Queens Midtown Tunnel @ Queens Side	40.741513	-73.952271
+New York Whitestone @ Bronx Bound	40.712784	-74.005941
+New York Beach Channel Dr @B 101 St	40.585922	-73.823227
+New York MLK Jr. Expwy @ Walker Street	40.712784	-74.005941
+New York St Nicholas Ave @ 125 St	40.810784	-73.952593
+New York South Street @ Pike Street	40.712415	-73.992571
+New York QBB NOR @ York Ave	40.712784	-74.005941
+New York QBB LL CM @ York Ave	40.712784	-74.005941
+New York QBB LL CM @ W Channel	40.712784	-74.005941
+New York Pearl Street @ St. James Pl	40.711024	-74.000484
+New York South St @ Broad St	40.701796	-74.011175
+New York RT. 9A @ N. Moore St	40.720329	-74.012279
+New York QBB UL CM @ York Ave	40.712784	-74.005941
+New York QBB SOR @ 1 Ave	40.712784	-74.005941
+New York Grand Concourse @ E 149 St	40.818641	-73.927354
+New York CVE02 NB at 64th Ave	40.712784	-74.005941
+New York CVE03 SB at 56th Ave	40.712784	-74.005941
+New York Lexington Ave @ 57 ST	40.760925	-73.96913
+New York Lexington Ave @ 72 St	40.770432	-73.962216
+New York Lexington Ave @ 42 St	40.751459	-73.97607
+New York Lexington Ave @ 49 St	40.755877	-73.97283
+New York Lexington Ave @ 23 St	40.739505	-73.98474
+New York Lexington Ave @ 34 St	40.746387	-73.979727
+New York Lenox Ave @ 125 St	40.807814	-73.945547
+New York Lenox Ave @ 135 St	40.814145	-73.940908
+New York Houston St @ Christies St	40.955278	-73.991723
+New York Houston St @ Lafeyette St	40.725148	-73.995269
+New York 5 Ave @ 57 St	40.762981	-73.97396
+New York 5 Ave @ 49 St	40.757917	-73.977653
+New York 6 Ave @ 14 St	40.737368	-73.996843
+New York 5 Ave @ 72 St	40.772462	-73.967044
+New York 6 Ave @ 34 St	40.749782	-73.987757
+New York 6 Ave @ 23 St	40.742903	-73.992798
+New York 6 Ave @ 49 St	40.75927	-73.980886
+New York 6 Ave @ 42 St	40.754853	-73.984124
+New York 6 Ave @ 58 St	40.765008	-73.976717
+New York 6 Ave @ 57 St	40.76435	-73.977192
+New York Long Island Expy @ 27th St	40.751522	-73.371515
+New York Long Island Expy @ 185th St	40.743483	-73.836568
+New York Long Island Expy @ 172nd St	40.743483	-73.836568
+New York Long Island Expy @ 163rd St	40.743483	-73.836568
+New York Long Island Expy @ 84 St	40.739355	-73.792401
+New York Long Island Expy @ 75 St	40.739355	-73.792401
+New York Long Island Expy @ 58th St LL	40.743483	-73.836568
+New York Long Island Expy @ 48th St LL	40.743483	-73.836568
+New York Long Island Expy @ Grand Central Pkwy	40.767828	-73.884748
+New York Long Island Expy @ 99 St	40.739355	-73.792401
+New York Ocean Pkwy @ Kings Hwy	40.605657	-73.966964
+New York Ocean Pkwy @ Surf Av @ Sea Breeze Ave	40.575248	-73.968853
+New York MHB-31 Bklyn N URW @ Anch	40.712784	-74.005941
+New York MHB-33 Bklyn LRW @ Ex Ramp	40.712784	-74.005941
+New York Marine Parkway @ North Bound	40.590215	-73.900814
+New York MHB-16 Manhattan Colonade Entr	40.712784	-74.005941
+New York Ocean Pkwy @ Church Ave	40.644942	-73.974332
+New York Ocean Pkwy @ Ditmas Ave	40.636131	-73.972815
+New York Ocean Pkwy @ Ave I	40.626553	-73.970927
+New York Ocean Pkwy @ Ave U	40.597824	-73.965547
+New York Union tpke @ Little Neck Pkwy	40.743985	-73.717549
+New York Long Island Expy ramp to W/B BQE	40.743483	-73.836568
+New York Marine Parkway @ South Bound	40.590215	-73.900814
+New York Long Island Expy @ Underhill Ave	40.743483	-73.836568
+New York 7 Ave @ 57 St	40.765548	-73.980042
+New York Long Island Expy @ Lawrence St	40.58895	-73.659653
+New York Long Island Expy @ ramp to W/B BQE	40.743483	-73.836568
+New York Long Island Expy @ Greenpoint Ave	40.732968	-73.920358
+New York Long Island Expy @ Kissena Blvd	40.743483	-73.836568
+New York Korean War Vetrans Pkwy @ Bloomingdale Rd	40.712784	-74.005941
+New York Korean War Veterans Pkwy @ Tyrellan Ave	40.532895	-74.200488
+New York Hylan Blvd @ West Fingerboard Rd & Sand Ln	40.546458	-74.141466
+New York Van Wyck Expwy @ 87 Ave	40.705659	-73.818458
+New York Hylan Blvd @ Seaview Ave	40.586689	-74.092052
+New York Hylan Blvd @ Seaview Ave	40.586689	-74.092052
+New York Northern Blvd @ 108 St	40.757767	-73.86099
+New York Northern Blvd @ 114 St	40.758362	-73.855616
+New York Union Sq @ 14 St	40.73134	-73.982566
+New York Water St @ John St	40.70686	-74.004998
+New York BQE39 WB at Broadway - Ex40	40.712784	-74.005941
+New York BQE35 EB at 61st St - Ex39	40.712784	-74.005941
+New York WBB-21 @ SOR Manh Appr	40.712784	-74.005941
+New York WBB-23 @ N Manh Twr	40.712784	-74.005941
+New York Water St @ Wall St	40.705172	-74.0074
+New York WBB-20 @ MidSpan	40.712784	-74.005941
+New York Broadway @ 42 St	40.755822	-73.98644
+New York Belt Pkwy @ 130 St	40.623187	-74.041337
+New York West Broadway @ West Houston St	40.726891	-73.999973
+New York West Houston @ Hudson St	40.728767	-74.007085
+New York BQE33 WB at 45th St - Ex35	40.712784	-74.005941
+New York BQE31 - EB at 54th Ave - Ex35	40.712784	-74.005941
+New York BQE E/B Ent. Ramp @ Broadway	40.712784	-74.005941
+New York Belt Pkwy @ Springfield Blvd	40.632819	-73.882904
+New York Baxter St @ Canal Street	40.717558	-73.999315
+New York West St @ Murray	40.715221	-74.013214
+New York West St @ Clarkson	40.7298768	-74.0107056
+New York Grand Concourse @ 161 St	40.826617	-73.922643
+New York Fordham Rd and Grand Concourse	40.862958	-73.896434
+New York Henry Hudson @ North Bound	40.712784	-74.005941
+New York Farmers Blvd @ 147 Ave @ 175 St	40.661214	-73.77097
+New York E 149 St @ River Ave	40.819329	-73.930083
+New York Bruckner Blvd @ Lincoln Ave	40.807783	-73.929506
+New York Exterior St @ E 138 St	40.813802	-73.931374
+New York Exterior St @ 3 Ave	40.809412	-73.929626
+New York Cross Island Pkwy @ Throgsneck	40.786919	-73.80831
+New York Cross Island Pkwy @ Union Tpke	40.741009	-73.725797
+New York Cross Island Expy @ 14 Ave	40.788008	-73.817381
+New York Cross Island Pkwy @ Bayside Marina	40.777455	-73.767841
+New York Macombs Dam Bridge @ E 161 St	44.48503	-75.580018
+New York Macombs Dam Bridge	40.828494	-73.930369
+New York CrossBay @ North Bound	40.712784	-74.005941
+New York CrossBay @ South Bound	40.712784	-74.005941
+New York Worth Street @ W. Broadway	40.717658	-74.00753
+New York Worth Street @ Lafayette Street	40.715593	-74.003017
+New York Beach Channel Dr @B 140 St	40.577584	-73.859767
+New York 7 Ave @ 34 St	40.750995	-73.990633
+New York Long Island Expy btwn 50 St - 58th St	40.743483	-73.836568
+New York Hylan Blvd @ Arden Ave	40.529422	-74.16133
+New York Hylan Blvd @ Guyon Ave	40.560428	-74.120108
+New York Woodhaven Blvd @ Union Tpke	40.705539	-73.858236
+New York Hylan Ave @ Page Ave	40.507725	-74.230106
+New York Woodhaven Blvd @ Jamaica Ave	40.693635	-73.852263
+New York Woodhaven Blvd @ Myrtle Ave	40.702599	-73.855349
+New York Whitestone Expwy @ 25 Rd (Median)	40.712784	-74.005941
+New York Woodhaven Blvd @ Furmanville Ave	40.720344	-73.865451
+New York MLK Jr. Expwy @ Forest Ave.	40.712971	-74.077016
+New York Hylan Blvd @ Huguenot Ave	40.52404	-74.186108
+New York Hylan Blvd @ Midland Ave	40.577952	-74.10228

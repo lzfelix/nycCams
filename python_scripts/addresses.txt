@@ -1,0 +1,459 @@
+NY New York Hylan Blvd @ Seguine Ave
+NY New York Hylan Blvd @ Richmond Ave
+NY New York Hylan Blvd @ New Dorp Lane
+NY New York FDR Dr @ 79 St
+NY New York FDR Dr @ 73 St
+NY New York FDR Dr @ 38 St
+NY New York FDR Dr @ 23 St
+NY New York FDR Dr @ 155 Street
+NY New York FDR Dr @ 135 Street
+NY New York FDR Dr @ 111 ST
+NY New York FDR @ Jackson St
+NY New York FDR Dr @ 96 Street
+NY New York FDR Dr @ 90 St
+NY New York MHB-17 Manh LRW @ X OVER
+NY New York MHB-16A Manh East of Colonnade Entr
+NY New York MHB -19 Manh N URDW @ Anch
+NY New York Madison Ave @ 96 St
+NY New York MHB-16 Manh Colonade Entr
+NY New York MHB â€“ 32 Bklyn S URDW @ Anch
+NY New York MADISON @ 57 ST
+NY New York MADISON @ 34 ST
+NY New York Madison Ave @ 49 St
+NY New York Madison Ave @ 42 St
+NY New York Rockaway Blvd @ Farmers Blvd
+NY New York Rockaway Blvd @ Division St
+NY New York 3 AVE @ 34 ST
+NY New York 3 Ave @ 42 St
+NY New York 207 ST @ 9 Ave
+NY New York 3 Ave @ 23 St
+NY New York 3 Ave @ 59 St
+NY New York 3 Ave @ E 14 St
+NY New York 3 Ave @ 49 St
+NY New York 3 Ave @ 57 St
+NY New York 5 Ave @ 34 St
+NY New York 5 Ave @ 42 St
+NY New York Queens Blvd Mid Span of QBB
+NY New York Queens Blvd @ Van Dam
+NY New York Atlantic Ave @ BQE
+NY New York Belt Pkwy @ 158 St
+NY New York Belt Pkwy @ 68 St
+NY New York Belt Pkwy @ Bay 8th St
+NY New York Belt Pkwy @ Erskine
+NY New York Belt Pkwy @ Flatbush
+NY New York Belt Pkwy @ Ocean Pkwy
+NY New York Belt Pkwy @ Pennsylvania Ave
+NY New York Belt Pkwy@ Cross Bay Blvd
+NY New York Brooklyn Queens Expy @  Metropolitan Ave
+NY New York Gowanus Expwy @ 79 Street
+NY New York Flatbush Ave@ 6 Ave
+NY New York Gowanus Expy @ 92 St
+NY New York Gowanus Expwy btwn 6 & 7 Ave
+NY New York Grand Army Plaza
+NY New York Gowanus Expy @ Prospect Interchange
+NY New York Northern Blvd @ Parsons Blvd
+NY New York Northern Blvd @ Little Neck Pkwy
+NY New York QBB @ Crescent St
+NY New York Northern Blvd @ Union St
+NY New York Northern Blvd @ 68 St
+NY New York Northern Blvd @ 51 St
+NY New York Northern Blvd @ Honeywell Bridge
+NY New York Northern Blvd @ 97 St
+NY New York WSE @ Arden Ave
+NY New York WSE03 SB at Bloomingdale Rd-Ex3
+NY New York West Shore Expy @ Arden Ave
+NY New York West Shore Expy @ Victory Blvd
+NY New York QBB LL CM @ East Channel
+NY New York QBB LL CM @ 11 St
+NY New York WSE04 SB at Rossville Ave - Ex4
+NY New York Rockaway Blvd @ Guy Brewer Blvd
+NY New York West St @ Canal St
+NY New York West Houston @ Varick St
+NY New York Amsterdam @ 72 St
+NY New York 9 Ave @ 57 St
+NY New York West Street @ Intrepid
+NY New York West St @ West Houston St
+NY New York Worth Street @ Bowery
+NY New York Worth St @ Centre St
+NY New York 9 Ave @ 30 St
+NY New York 9 Ave @ 23 St
+NY New York 8th Ave @ 23 St
+NY New York 8 Ave @ Columbus Cr South
+NY New York 9 Ave @ 49 St
+NY New York 9 Ave @ 42 St
+NY New York 9 Ave @ 37 St
+NY New York 9 Ave @ 34 St
+NY New York Rockaway Blvd @ Van Wyck Expy E S/R
+NY New York Rockaway Blvd @ Van Wyck Expy W S/R
+NY New York Cross Bay Blvd @ North Channel Bridge
+NY New York Rockaway Blvd @ S. Conduit Ave
+NY New York Springfield Ave @ Jamaica Ave
+NY New York Springfield Blvd @ Merrick Blvd
+NY New York S Conduit Ave @ 150 St
+NY New York Seagirt Blvd @ B 9 St
+NY New York Throgs Neck Bridge @ Queens Bound
+NY New York Triborough Bridge Queens Bound
+NY New York Henry Hudson @ 158 St
+NY New York Grand Central Pkwy @ 37 Street
+NY New York GR Brewer @ Belt
+NY New York WBB-18 @ SOR Cntr Span
+NY New York WBB-19 @ Bklyn Tower
+------------ 100 milestone
+NY New York WBB-2 @ NOR Bklyn-Driggs
+NY New York WBB-4 @ NOR Bklyn-Mid Span
+NY New York WBB-6 @ Delancy-Clinton
+NY New York BRE04 WB at Bronx Rvr Pkwy Ex51
+NY New York GCP @ 166 St
+NY New York Farmers Blvd @ N Conduit Ave
+NY New York GCP @ Astoria Blvd @ 49 St
+NY New York GCP @ 214 St
+NY New York GCP06 WB at 27th Ave - Ex6
+NY New York GCP @ LGA 94 St Exit
+NY New York GCP08 EB at Roosevelt Ave - Ex9
+NY New York GCP07 EB at Ditmars Blvd - Ex9
+NY New York Sutton Pl @ 58 St
+NY New York Triborough Bridges @ Manhattan Bound
+NY New York Brooklyn Bridge - Ped Walk Way
+NY New York Van Wyck Expwy Btwn 115 Ave. & 116 Ave
+NY New York Van Wyck Expwy @ Rockaway Blvd.
+NY New York VWE08 NB at Foch Blvd - Ex2
+NY New York Van Wyck Expy @ S Conduit Ave LL
+NY New York Van Wyck Expwy @ Hillside Ave
+NY New York Broadway @ 96 St
+NY New York Van Wyck Expwy @ Queens Blvd.(entrance ramp)
+NY New York Van Wyck Expwy @ Jackie Robinson Pkwy
+NY New York Broadway @ Chambers St
+NY New York Whitestone Expwy @ 14 Ave (Median)
+NY New York Whitestone @ Queens Bound
+NY New York Belt Pkwy @ Brookville Blvd
+NY New York College Point Blvd @ Sanford Ave
+NY New York Broadway @ 51 St
+NY New York Beach Channel Dr @B Mott Ave
+NY New York Broadway @ 169 Street
+NY New York Amsterdam Ave @ 181 St
+NY New York Amsterdam Ave @ 60 St
+NY New York Amsterdam @ 86 St
+NY New York Amsterdam Ave @ 125 St
+NY New York Brooklyn Queens Expwyat Stewart Avenue
+NY New York E 63 St @ QBB
+NY New York East Broadway @ Essex St
+NY New York East Houston St @ Ave B
+NY New York East Houston St @ Ave D
+NY New York FDR @ 120 St
+NY New York FDR @ 48 St
+NY New York FDR @ E 127 St
+NY New York FDR @ E 53 St
+NY New York FDR @ E 6 St
+NY New York FDR @ Grand St
+NY New York Grand St @ Broadway
+NY New York Grand St @ Essex St
+NY New York FDR Dr @ Brooklyn Bridge Exit NB
+NY New York FDR Dr @ Brooklyn Bridge Exit SB
+NY New York FDR Dr @ Old Slip
+NY New York Ft Washington @ 178 St
+NY New York Ft Washington @ 179 St
+NY New York Ft Washinton @ 179 St
+NY New York Grand St @ Allen St
+NY New York Grand St @ Bowery
+NY New York 2 Ave @ E 14 St
+NY New York 2 Ave @ 59 St (QBB)
+NY New York 2 Ave @ 58 St
+NY New York 2 Ave @ 42 St
+NY New York 2 Ave @ 36 St-Midtown Tunnel
+NY New York 2 Ave @ 23 St
+NY New York 12 Ave @ 57 St
+NY New York 12 Ave @ 42 St
+NY New York 12 Ave @ 34 St
+NY New York 12 Ave @ 22 St
+NY New York West Shore Expwy @ Woodrow Rd
+NY New York West Shore Expwy @ Victory Blvd
+NY New York Flatbush Ave @ Aviator Sports & Golf Club
+NY New York Flatbush Ave @ Fillmore Ave
+NY New York Flatbush Ave @ Kings Hwy
+NY New York Flatbush Ave @ Marine Park
+NY New York Cadman Plz E @ Prospect St
+NY New York Cross Bay Blvd @  Wildlife Refuge
+NY New York Cross Bay Blvd @ Rockaway Blvd
+NY New York Flatbush Ave @ Ave U
+NY New York Flatbush Ave @ Tillary St
+NY New York Flatbush Ave @ Willoughby
+NY New York Brooklyn Queens Expy @ Lee Ave
+NY New York Brooklyn Queens Expy @ Kent Ave
+NY New York Brooklyn Queens Expy @ Hamilton Ave
+NY New York Brooklyn Queens Expy @ Furman St UL
+NY New York Brooklyn Queens Expy @ Furman St LL
+NY New York Brooklyn Queens Expy @ Congress St
+NY New York Brooklyn Queens Expy @ Broadway St
+NY New York Brooklyn Queens Expy @ Atlantic Ave
+NY New York Brooklyn Queens Expy @ Adams St
+NY New York Brooklyn Queens Expy @ 31st Ave
+NY New York Victory Blvd @ Bay St
+NY New York Verrazano-Narrows @ Staten Island Bound
+NY New York Houston St @ Broadway
+NY New York West Shore Expwy @ Meredith Blvd.
+NY New York QBB SOR @ Sutton Pl
+NY New York QBB SOR @ W Channel
+NY New York QBB UL @ Queens Pier
+NY New York Qns Blvd @ 65 Ave
+NY New York Qns Blvd @ 65 PL
+NY New York Qns Blvd @ QnCnt Mall
+NY New York Queens Blvd @ 39 ST
+NY New York Queens Blvd @ 51 St
+------------ 100 milestone
+NY New York Queens Blvd @ Jackson Ave
+NY New York Queens Blvd @ Skillman
+NY New York Victory Blvd WOF Campus Dr
+NY New York Victory Blvd @ Jersey St
+NY New York West Shore Expwy @ Englewood Ave
+NY New York West Shore Expwy @ Edward Curry Ave
+NY New York Houston St @ Bowery St
+NY New York West Shore Expwy @ Fresh Kills Creek
+NY New York WBB-1 @ Bklyn Plaza
+NY New York WBB-14 @ NIR Bklyn Kent Ave
+NY New York BRE07 NB at Quincy Ave - Ex7B
+NY New York Bronx River Pkwy @ 233 ST
+NY New York Park Ave @ 57 St
+NY New York Pearl St @ Dover
+NY New York MHB-23 Manh LRDWY @ Twr
+NY New York MHB-24 Manh S URDWY @ Twr
+NY New York MHB-25 Manh S URW @ Twr Walkwy
+NY New York Montgomergy @ South St
+NY New York MHB-18 Manh LRW @ EOF X Over
+NY New York MHB-20 Mahn S URW @ Anch
+NY New York MHB-21 Manh N URDWY @ Arch
+NY New York MHB-22 Manh N URDWY @ Twr
+NY New York 12 Ave @ 14 St
+NY New York 11 Ave @ 57 St
+NY New York 1 Ave @ 96 St
+NY New York 1 Ave @ 86 St
+NY New York 1 Ave @ 42 St
+NY New York 1 Ave @ 23 St
+NY New York 11 Ave @ 42 St
+NY New York 11 Ave @ 34 ST
+NY New York 10 Ave @ 57 St
+NY New York 1 Ave @ E 14 St
+NY New York Van Wyck Expwy @ 101  Ave SB
+NY New York Hamilton Ave @ Hamilton PL @ 15 St (S SR)
+NY New York Van Wyck Expwy @ 109 Ave
+NY New York Van Wyck Expwy @ 101 Ave NB
+NY New York Van Wyck Expwy @ 133 Ave SB
+NY New York Van Wyck Expwy @ 111 Ave
+NY New York Van Wyck Expwy @ 91 Ave
+NY New York Hamilton Ave @ Hamilton Pl @ 15 St (N SR)
+NY New York Van Wyck Expwy @ Atlantic Ave
+NY New York Van Wyck Expwy @ Alwick Rd SB
+NY New York 7 Ave @ 49 St
+NY New York Flatbush Ave and Atlantic Ave
+NY New York 8 Ave @ 14 St
+NY New York 8 Ave @ 34 St
+NY New York 6 Ave @ West Houston St
+NY New York 7 Ave @ 145 St
+NY New York 7 Ave @ 23St
+NY New York Flatbush Ave and 4 Ave
+NY New York 8 Ave @ 42 St
+NY New York 8 Ave @ 49 St
+NY New York CVE04 SB at 48th Ave
+NY New York Guy Brewer Blvd @ N Conduit Ave
+NY New York Hillside Ave @ Little Neck Pkwy
+NY New York Jackie Robinson Pkwy @ Queens Blvd
+NY New York LIE @ College Point Blvd
+NY New York Grand Central Pkwy @ 46 street
+NY New York Grand Central Pkwy @ 72 Street
+NY New York Grand Central Pkwy @ 75 Street
+NY New York Grand Central Pkwy E/Connector @ 126 St
+NY New York LIE @ Kissena Blvd
+NY New York LIE @ Marathon Pkwy
+NY New York Verrazano-Narrows @ Brooklyn Bound
+NY New York Stillwell Ave @ Surf Ave
+NY New York Stillwell Ave @ Neptune Ave
+NY New York Sands St @ Brooklyn Bridge Ent
+NY New York Sands St @ BQE Ent
+NY New York Prospect Pkwy @ 3 Ave
+NY New York Prospect Expy @ Caton Ave
+NY New York Prospect Expy @ 9 Ave
+NY New York Prospect Expy @ 7 Ave
+NY New York Prospect Expy @ 6 Ave
+NY New York MLK Jr. Expwy @ Watchogue Rd
+NY New York Outerbridge Crossing @ Tyrellan Ave
+NY New York SIE @ Clove Rd
+NY New York SIE @ Richmond Ave
+NY New York Staten Island Expwy @ Bradley Ave
+NY New York Staten Island Expwy @ Forest Ave
+NY New York Staten Island Expwy @ Richmond Ave
+NY New York Staten Island Expwy @ SIE/MLK Interchange
+NY New York Staten Island Expwy @ Victory Blvd.
+NY New York Staten Island Expwy @ W of South Ave
+NY New York E 57 St @ QBB
+NY New York Dyer @ 42 Street
+NY New York Clearview Expy @ 35 St
+NY New York College Point Blvd @ 35 Ave
+NY New York College Point Blvd @ Roosevelt Ave
+NY New York Holland Tunnel
+NY New York Henry Hudson Pkwy @ 96 St
+NY New York Henry Hudson Pkwy @ 70 St
+NY New York Henry Hudson @ South Bound
+NY New York Cross Bay Blvd @ 20 Rd
+NY New York Henry Hudson @ 137 St
+NY New York Harlem Rvr Dr (FDR) @ 166 St
+NY New York Greenwich St @ Morris St
+NY New York Church Street @ Vesey
+NY New York Canal Street @ Chrystie Street
+NY New York CPW @ 96 St
+NY New York Columbus St @ 65 St
+------------ 100 milestone
+NY New York BQE40 WB at Northern Blvd - Ex41
+NY New York Brooklyn Battery Tunnel @ West Street
+NY New York Clearview @ Northern Blvd
+NY New York Clearview Expy @ 26th Ave
+NY New York Canal Street @ Allen Street
+NY New York Brooklyn Bridge @ Centre Street
+NY New York Van Wyck Expwy @ Foch Blvd. SB
+NY New York Brooklyn Queens Expy @ Sackett St
+NY New York Brooklyn Queens Expy @ Middagh St UL
+NY New York Brooklyn Queens Expy @ Middagh St LL
+NY New York Brooklyn Queens Expy @ Manhattan Ave
+NY New York Brooklyn Queens Expy @ Union St
+NY New York Brooklyn Queens Expy @ State St UL
+NY New York Brooklyn Queens Expy @ South 5th St
+NY New York Brooklyn Queens Expy @ Sands St
+NY New York Brooklyn-Battery Tunnel @ Brooklyn Side
+NY New York Brooklyn Queens Expy @ Wythe Ave
+NY New York Third Ave Bridge
+NY New York Triborough Bridge Bronx Bound
+NY New York Pelham Pkwy E/B @ Boston Rd
+NY New York Pelham Shore Rd @ City Island Rd
+NY New York NE Thruway @ Conner St
+NY New York New Eng Thru @ Bartow
+NY New York Major Deegan @ Triboro Bridge
+NY New York Major Deegan Expy @ N of Alex Hamilton Bridge
+NY New York Rockaway Blvd @ Brookville Blvd
+NY New York Rockaway Blvd @ Baisley Blvd
+NY New York Queens Plz S @ 27 St
+NY New York Queens Plaza North @ 2811 (Westside)
+NY New York Queens Plaza N @ Northern Blvd
+NY New York Queens Midtown Tunnel @ Queens Side
+NY New York Whitestone @ Bronx Bound
+NY New York Beach Channel Dr @B 101 St
+NY New York MLK Jr. Expwy @ Walker Street
+NY New York St Nicholas Ave @ 125 St
+NY New York South Street @ Pike Street
+NY New York QBB NOR @ York Ave
+NY New York QBB LL CM @ York Ave
+NY New York QBB LL CM @ W Channel
+NY New York Pearl Street @ St. James Pl
+NY New York South St @ Broad St
+NY New York RT. 9A @ N. Moore St
+NY New York QBB UL CM @ York Ave
+NY New York QBB SOR @ 1 Ave
+NY New York Grand Concourse @ E 149 St
+NY New York CVE02 NB at 64th Ave
+NY New York CVE03 SB at 56th Ave
+NY New York Lexington Ave @ 57 ST
+NY New York Lexington Ave @ 72 St
+NY New York Lexington Ave @ 42 St
+NY New York Lexington Ave @ 49 St
+NY New York Lexington Ave @ 23 St
+NY New York Lexington Ave @ 34 St
+NY New York Lenox Ave @ 125 St
+NY New York Lenox Ave @ 135 St
+NY New York Houston St @ Christies St
+NY New York Houston St @ Lafeyette St
+NY New York 5 Ave @ 57 St
+NY New York 5 Ave @ 49 St
+NY New York 6 Ave @ 14 St
+NY New York 5 Ave @ 72 St
+NY New York 6 Ave @ 34 St
+NY New York 6 Ave @ 23 St
+NY New York 6 Ave @ 49 St
+NY New York 6 Ave @ 42 St
+NY New York 6 Ave @ 58 St
+NY New York 6 Ave @ 57 St
+NY New York Long Island Expy @ 27th St
+NY New York Long Island Expy @ 185th St
+NY New York Long Island Expy @ 172nd St
+NY New York Long Island Expy @ 163rd St
+NY New York Long Island Expy @ 84 St
+NY New York Long Island Expy @ 75 St
+NY New York Long Island Expy @ 58th St LL
+NY New York Long Island Expy @ 48th St LL
+NY New York Long Island Expy @ Grand Central Pkwy
+NY New York Long Island Expy @ 99 St
+NY New York Ocean Pkwy @ Kings Hwy
+NY New York Ocean Pkwy @ Surf Av @ Sea Breeze Ave
+NY New York MHB-31 Bklyn N URW @ Anch
+NY New York MHB-33 Bklyn LRW @ Ex Ramp
+NY New York Marine Parkway @ North Bound
+NY New York MHB-16 Manhattan Colonade Entr
+NY New York Ocean Pkwy @ Church Ave
+NY New York Ocean Pkwy @ Ditmas Ave
+NY New York Ocean Pkwy @ Ave I
+NY New York Ocean Pkwy @ Ave U
+NY New York Union tpke @ Little Neck Pkwy
+NY New York Long Island Expy ramp to W/B BQE
+NY New York Marine Parkway @ South Bound
+NY New York Long Island Expy @ Underhill Ave
+NY New York 7 Ave @ 57 St
+NY New York Long Island Expy @ Lawrence St
+NY New York Long Island Expy @ ramp to W/B BQE
+NY New York Long Island Expy @ Greenpoint Ave
+NY New York Long Island Expy @ Kissena Blvd
+NY New York Korean War Vetrans Pkwy @ Bloomingdale Rd
+NY New York Korean War Veterans Pkwy @ Tyrellan Ave
+NY New York Hylan Blvd @ West Fingerboard Rd & Sand Ln
+NY New York Van Wyck Expwy @ 87 Ave
+------------ 100 milestone
+NY New York Hylan Blvd @ Seaview Ave
+NY New York Hylan Blvd @ Seaview Ave
+NY New York Northern Blvd @ 108 St
+NY New York Northern Blvd @ 114 St
+NY New York Union Sq @ 14 St
+NY New York Water St @ John St
+NY New York BQE39 WB at Broadway - Ex40
+NY New York BQE35 EB at 61st St - Ex39
+NY New York WBB-21 @ SOR Manh Appr
+NY New York WBB-23 @ N Manh Twr
+NY New York Water St @ Wall St
+NY New York WBB-20 @ MidSpan
+NY New York Broadway @ 42 St
+NY New York Belt Pkwy @ 130 St
+NY New York West Broadway @ West Houston St
+NY New York West Houston @ Hudson St
+NY New York BQE33 WB at 45th St - Ex35
+NY New York BQE31 - EB at 54th Ave - Ex35
+NY New York BQE E/B Ent. Ramp @ Broadway
+NY New York Belt Pkwy @ Springfield Blvd
+NY New York Baxter St @ Canal Street
+NY New York West St @ Murray
+NY New York West St @ Clarkson
+NY New York Grand Concourse @ 161 St
+NY New York Fordham Rd and Grand Concourse
+NY New York Henry Hudson @ North Bound
+NY New York Farmers Blvd @ 147 Ave @ 175 St
+NY New York E 149 St @ River Ave
+NY New York Bruckner Blvd @ Lincoln Ave
+NY New York Exterior St @ E 138 St
+NY New York Exterior St @ 3 Ave
+NY New York Cross Island Pkwy @ Throgsneck
+NY New York Cross Island Pkwy @ Union Tpke
+NY New York Cross Island Expy @ 14 Ave
+NY New York Cross Island Pkwy @ Bayside Marina
+NY New York Macombs Dam Bridge @ E 161 St
+NY New York Macombs Dam Bridge
+NY New York CrossBay @ North Bound
+NY New York CrossBay @ South Bound
+NY New York Worth Street @ W. Broadway
+NY New York Worth Street @ Lafayette Street
+NY New York Beach Channel Dr @B 140 St
+NY New York 7 Ave @ 34 St
+NY New York Long Island Expy btwn 50 St - 58th St
+NY New York Hylan Blvd @ Arden Ave
+NY New York Hylan Blvd @ Guyon Ave
+NY New York Woodhaven Blvd @ Union Tpke
+NY New York Hylan Ave @ Page Ave
+NY New York Woodhaven Blvd @ Jamaica Ave
+NY New York Woodhaven Blvd @ Myrtle Ave
+NY New York Whitestone Expwy @ 25 Rd (Median)
+NY New York Woodhaven Blvd @ Furmanville Ave
+NY New York MLK Jr. Expwy @ Forest Ave.
+NY New York Hylan Blvd @ Huguenot Ave
+NY New York Hylan Blvd @ Midland Ave

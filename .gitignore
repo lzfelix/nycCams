@@ -1,2 +1,2 @@
-bin/*
-node_modules/*
+motion_server/bin/*
+motion_server/node_modules/*
