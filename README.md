@@ -11,10 +11,10 @@ Just run ```npm install``` on the root folder and everything is going to be fine
 ## Tasks
 
 | Task           | Status         |
-|----------------|----------------|
+|----------------|:----------------:|
 |: **Back end**                      :|
-| Implementing motion detection algorithm    | 70% done |
-| Group cameras location on a single j​son​file |To do     |
+| Implementing motion detection algorithm     | done |
+| Group cameras location on a single j​son​ file | done |
 | Creating a server which receives a camera request and counts the amount of cars | To do|
 | Set up a load balancer to handle load on the processing server| To do |
 | Test manual scaling with this server | To do |
@@ -22,7 +22,7 @@ Just run ```npm install``` on the root folder and everything is going to be fine
 | Implement the presentation server    | To do|
 | Implement database to keep track of most accessed cameras| To do |
 |: **FRONT END** :|
-| Collect (lat,long) location of the cameras based on its address |To do |
+| Collect (lat,long) location of the cameras based on its address | done |
 | Develop the first page, where the user can select which cameras he wants to monitor | To do |
 | Embed Google Maps in this fist page |To do |
 | Retrieve popular cameras from the Database | To do |

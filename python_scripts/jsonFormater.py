@@ -95,6 +95,7 @@ def updateCameras(cameras, latlong_file):
 def outputJson(cameras, json_file):
     file = open(json_file, "w")
 
+    file.write("{\n")
     there_was_previous = False
 
     for (key, camera) in cameras.iteritems():
