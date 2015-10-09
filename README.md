@@ -1,6 +1,7 @@
 # Assignment 2 - Motion detector
 
 In order to build this project, you are going to need:
+
 - opencv 2.4.x
 - node 4.x
 
