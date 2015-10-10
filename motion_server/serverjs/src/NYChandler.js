@@ -5,12 +5,12 @@ var path    = require("path");
 var fs      = require('fs');
 var Q       = require("Q");
 
-var IMAGES_TEMP_FOLDER = "temp";
-var IMAGE_EXTENSION = ".png";
+const IMAGES_TEMP_FOLDER = "temp";
+const IMAGE_EXTENSION = ".png";
 
 //This delay isn't very precise. Actually 200 ms makes a download delay of ~1 second
 //due to node's scheduling and external network access.
-var DELAY_BETWEEN_FRAMES = 200
+const DELAY_BETWEEN_FRAMES = 200
 
 /**
  * Returns an unique 64-hex character name.

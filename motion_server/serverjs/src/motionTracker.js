@@ -1,38 +1,39 @@
-var nyc = require("./NYCHandler.js");
-var fs  = require("fs");
-var cv  = require("opencv");
-var Q   = require("q");
-Q.map   = require("q-map").map;
+var path = require("path");
+var nyc  = require("./NYCHandler.js");
+var fs   = require("fs");
+var cv   = require("opencv");
+var Q    = require("q");
+Q.map    = require("q-map").map;
 
 // some undocumented node OpenCV constants
-COLOR_BGR2GRAY = "CV_BGR2GRAY";
-BINARY_THRESHOLD = "Binary";
+const COLOR_BGR2GRAY = "CV_BGR2GRAY";
+const BINARY_THRESHOLD = "Binary";
 
 // any grayscale pixel with indensity less than this becomes black
 // when thresholding.
-SENSITIVITY_VALUE = 50
+const SENSITIVITY_VALUE = 50
 
 // blur used to remove some small holes on thresholded image
-USE_GAUSSIAN_BLUR = false;
+const USE_GAUSSIAN_BLUR = false;
 
 // be careful, since these values may break node's OpenCV. This constant is only
 // used if USE_GAUSSIAN_BLUR is set to true
-BLUR_VALUES = [3, 3]
+const BLUR_VALUES = [3, 3]
 
 // contours with area smaller than this value, in pixels, are ignored when counting cars
-MIN_CAR_AREA = 400
+const MIN_CAR_AREA = 400
 
 // if this parameter is set to true, some intermediate images are stored on this
 // and never erased, but updated on each new processing.
-KEEP_INTERMEDIATE_IMAGES = true;
+const KEEP_INTERMEDIATE_IMAGES = true;
 
 // these constants are only used then KEEP_INTERMEDIATE_IMAGES is set to true to
 // save the intermediate images on disk.
-MARKED_IMAGE_NAME = "marked.png";
-MOTION_MAP_NAME   = "binary.png";
+const MARKED_IMAGE_NAME = path.join(__dirname, "marked.png");
+const MOTION_MAP_NAME   = path.join(__dirname, "binary.png");
 
 // amount of threads used to count cars in motion on multiple locations
-AMOUNT_OF_THEADS = 1;
+const AMOUNT_OF_THEADS = 1;
 
 /**
  * Loads as many images as there are on the array <imagesPaths>.
