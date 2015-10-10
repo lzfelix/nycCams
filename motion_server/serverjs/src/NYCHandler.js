@@ -3,7 +3,7 @@ var request = require('request');
 var crypto  = require("crypto");
 var path    = require("path");
 var fs      = require('fs');
-var Q       = require("Q");
+var Q       = require("q");
 
 const IMAGES_TEMP_FOLDER = "temp";
 const IMAGE_EXTENSION = ".png";
