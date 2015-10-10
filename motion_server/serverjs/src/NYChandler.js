@@ -1,10 +1,11 @@
 var cameras = require("./cameras.json");
 var request = require('request');
 var crypto  = require("crypto");
+var path    = require("path");
 var fs      = require('fs');
 var Q       = require("Q");
 
-var IMAGES_TEMP_FOLDER = "./temp/";
+var IMAGES_TEMP_FOLDER = "temp";
 var IMAGE_EXTENSION = ".png";
 
 //This delay isn't very precise. Actually 200 ms makes a download delay of ~1 second
@@ -51,8 +52,9 @@ function getImage_promise(camURL, filename) {
  */
 exports.getStreetImages = function(camId) {
     var cameraURL = cameras[camId].URL;
-    var frameName1 = IMAGES_TEMP_FOLDER + generateUniqueName() + IMAGE_EXTENSION;
-    var frameName2 = IMAGES_TEMP_FOLDER + generateUniqueName() + IMAGE_EXTENSION;
+
+    var frameName1 = path.join(__dirname, IMAGES_TEMP_FOLDER, generateUniqueName() + IMAGE_EXTENSION);
+    var frameName2 = path.join(__dirname, IMAGES_TEMP_FOLDER, generateUniqueName() + IMAGE_EXTENSION);
 
     var deferred = Q.defer();
 

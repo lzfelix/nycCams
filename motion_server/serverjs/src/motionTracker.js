@@ -1,4 +1,4 @@
-var nyc = require("./NYChandler.js");
+var nyc = require("./NYCHandler.js");
 var fs  = require("fs");
 var cv  = require("opencv");
 var Q   = require("q");
@@ -12,10 +12,11 @@ BINARY_THRESHOLD = "Binary";
 // when thresholding.
 SENSITIVITY_VALUE = 50
 
-USE_GAUSIAN_BLUR = false;
+// blur used to remove some small holes on thresholded image
+USE_GAUSSIAN_BLUR = false;
 
 // be careful, since these values may break node's OpenCV. This constant is only
-// used if USE_GAUSIAN_BLUR is set to true
+// used if USE_GAUSSIAN_BLUR is set to true
 BLUR_VALUES = [3, 3]
 
 // contours with area smaller than this value, in pixels, are ignored when counting cars
@@ -77,7 +78,7 @@ function loadImages_promise(imagesPaths, threads) {
 
 /**
  * Simple background subtraction technique. First subtract both images, then
- * threshold it. If USE_GAUSIAN_BLUR is set to true, this filter is applying
+ * threshold it. If USE_GAUSSIAN_BLUR is set to true, this filter is applying
  * using BLUR_VALUES as the convolution matrix and the image is thresholded
  * again. The resulting frame is then returned.
  * @param  {opencv.Matrix} imageBefore A openCV image matrix.
@@ -103,7 +104,7 @@ function generateMotionMap(imageBefore, imageAfter) {
         binaryImage.save(MOTION_MAP_NAME);
 
     // apply gaussian blur to remove small "holes" withing contours
-    if (USE_GAUSIAN_BLUR) {
+    if (USE_GAUSSIAN_BLUR) {
         binaryImage.gaussianBlur(BLUR_VALUES);
         binaryImage = binaryImage.threshold(SENSITIVITY_VALUE, 255, BINARY_THRESHOLD);
     }
@@ -174,7 +175,6 @@ function countCars(motionMap, originalImage) {
  */
 function countCarsInMovment_promise(camId) {
     var deferred = Q.defer();
-
     var downloadedImages = []
 
     nyc.getStreetImages(camId)
@@ -199,13 +199,11 @@ function countCarsInMovment_promise(camId) {
         else
             carsInMotion = countCars(motionMap);
 
-        console.log("here");
-
         //async deleting the downloaded frames
         for (var i = 0; i < downloadedImages.length; i++)
             fs.unlink(downloadedImages[i]);
 
-        console.log("here...")
+
         deferred.resolve(carsInMotion);
     });
 
@@ -226,14 +224,63 @@ function countCarsInMovment_promise(camId) {
  */
 function countMultipleStreets_promise(camIds, threads) {
     var threads = (typeof(threads) === "undefined" || threads < 1) ? AMOUNT_OF_THEADS : threads;
-    console.log(">>>" + threads);
 
     return Q.map(camIds, countCarsInMovment_promise, threads)
 }
 
+/**
+ * This functions wraps countCarsInMovment_promise, returning a JSON object with
+ * the camID as key and the amount of cars as mapped value.
+ * @param  {string} camId The ID of a NYC camera. Usually cam[ID].
+ * @return {Q.promise}    A promise thatn when fulfilled contains a JSON object
+ *                          where the key is the camID and the mapped value is
+ *                          the amount of cars in motion. This promise may be
+ *                          rejected due IO problems (storage and network)
+ */
+function jsonCarsInMovment_promise(camId) {
+    return countCarsInMovment_promise(camId)
+    .then(function(amount) {
+        var json = {};
+        json.camId = amount;
+        return json;
+    })
+}
+
+/**
+ * This functions wraps countMultipleStreets_promise, returning a JSON object with
+ * the camID as key and the amount of cars as mapped value.
+ * @param  {string array} camIds  An array containing the camera IDs of the places
+ *                                to monitor. Typically cam[ID].
+ * @param  {int} threads          Optional parameter containing the amount of threads
+ *                                used to count the cars in parallel. If not used,
+ *                                the default is AMOUNT_OF_THEADS.
+ * @return {Q.promise}    A promise thatn when fulfilled contains a JSON object
+ *                          where the key is the camID and the mapped value is
+ *                          the amount of cars in motion. This promise may be
+ *                          rejected due IO problems (storage and network)
+ */
+function jsonMultipleStreets_promise(camIds, threads) {
+    return countMultipleStreets_promise(camIds, threads)
+    .then(function(amounts) {
+        console.log('assemblying json');
+
+        var json = {};
+        for (var i = 0; i < camIds.length; i++) {
+            json[camIds[i]] = amounts[i];
+        }
+
+        return json;
+    });
+}
+
+
 module.exports.countCarsInMovment_promise = countCarsInMovment_promise;
 module.exports.countMultipleStreets_promise = countMultipleStreets_promise;
+module.exports.jsonCarsInMovment_promise = jsonCarsInMovment_promise;
+module.exports.jsonMultipleStreets_promise = jsonMultipleStreets_promise;
 
 
+// jsonCarsInMovment_promise("cam102").done(console.log);
+// jsonMultipleStreets_promise(["cam1", "cam2", "cam20"], 1).done(console.log);
 // countCarsInMovment_promise("cam7").done(console.log);
 // countMotionOnMultipleStreets(["cam10", "cam20"], 2).done(console.log);
