@@ -5,6 +5,7 @@ var cv   = require("opencv");
 var Q    = require("q");
 Q.map    = require("q-map").map;
 
+
 // some undocumented node OpenCV constants
 const COLOR_BGR2GRAY = "CV_BGR2GRAY";
 const BINARY_THRESHOLD = "Binary";
