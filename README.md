@@ -15,7 +15,7 @@ Just run ```npm install``` on the root folder and everything is going to be fine
 |: **Back end**                      :|
 | ~~Implementing motion detection algorithm~~     | Done |
 | ~~Group cameras location on a single j​son​ file~~ | Done |
-| Creating a server which receives a camera request and counts the amount of cars | To do|
+| ~~Creating a server which receives a camera request and counts the amount of cars~~˜ | Done |
 | Set up a load balancer to handle load on the processing server| To do |
 | Test manual scaling with this server | To do |
 | Configure automatic scale out/in using the load balancer| To do |
