@@ -149,12 +149,6 @@
 		"lat"		: "40.637575",
 		"long"		: "-73.740949"
 	},
-	"cam22" : {
-		"address"	: "3 AVE @ 34 ST",
-		"URL"		: "http://",
-		"lat"		: "40.745717",
-		"long"		: "-73.978119"
-	},
 	"cam23" : {
 		"address"	: "3 Ave @ 42 St",
 		"URL"		: "http://207.251.86.238/cctv290.jpg",
@@ -371,7 +365,7 @@
 		"lat"		: "40.545756",
 		"long"		: "-74.178874"
 	},
-	"cam453" : {
+	"cam361" : {
 		"address"	: "WSE03 SB at Bloomingdale Rd-Ex3",
 		"URL"		: "http://207.251.86.238/cctv619.jpg",
 		"lat"		: "41.957529",
@@ -401,7 +395,7 @@
 		"lat"		: "40.712784",
 		"long"		: "-74.005941"
 	},
-	"cam454" : {
+	"cam22" : {
 		"address"	: "WSE04 SB at Rossville Ave - Ex4",
 		"URL"		: "http://207.251.86.238/cctv620.jpg",
 		"lat"		: "40.712784",
@@ -1154,12 +1148,6 @@
 	"cam360" : {
 		"address"	: "QBB SOR @ Sutton Pl",
 		"URL"		: "http://207.251.86.238/cctv406.jpg",
-		"lat"		: "40.712784",
-		"long"		: "-74.005941"
-	},
-	"cam361" : {
-		"address"	: "QBB SOR @ W Channel",
-		"URL"		: "http://",
 		"lat"		: "40.712784",
 		"long"		: "-74.005941"
 	},

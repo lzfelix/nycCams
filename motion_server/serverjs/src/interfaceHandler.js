@@ -2,7 +2,7 @@ const BAD_REQUEST_HTML_CODE = 400;
 const TEXT_INVALID_CAM = "Invalid camera id provided.";
 
 const MIN_ID = 0;
-const MAX_ID = 454;
+const MAX_ID = 452;
 
 /**
  * Validates a camera ID. A valid camID has the prefix "cam", followed by its

@@ -42,8 +42,8 @@ http://207.251.86.238/cctv740.jpg
 http://207.251.86.238/cctv203.jpg
 3 Ave @ 23 St
 http://207.251.86.238/cctv430.jpg
-3 AVE @ 34 ST
-http://
+WSE04 SB at Rossville Ave - Ex4
+http://207.251.86.238/cctv620.jpg
 3 Ave @ 42 St
 http://207.251.86.238/cctv290.jpg
 3 Ave @ 49 St
@@ -720,8 +720,8 @@ QBB LL CM @ East Channel
 http://207.251.86.238/cctv783.jpg
 QBB SOR @ Sutton Pl
 http://207.251.86.238/cctv406.jpg
-QBB SOR @ W Channel
-http://
+WSE03 SB at Bloomingdale Rd-Ex3
+http://207.251.86.238/cctv619.jpg
 QBB UL @ Queens Pier
 http://207.251.86.238/cctv415.jpg
 Qns Blvd @ 65 Ave
@@ -904,7 +904,3 @@ West Shore Expy @ Victory Blvd
 http://207.251.86.238/cctv653.jpg
 WSE @ Arden Ave
 http://207.251.86.238/cctv84.jpg
-WSE03 SB at Bloomingdale Rd-Ex3
-http://207.251.86.238/cctv619.jpg
-WSE04 SB at Rossville Ave - Ex4
-http://207.251.86.238/cctv620.jpg
