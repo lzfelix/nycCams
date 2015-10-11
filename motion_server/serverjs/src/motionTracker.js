@@ -1,5 +1,5 @@
 var path = require("path");
-var nyc  = require("./NYChandler.js");
+var nyc  = require("./NYCHandler.js");
 var fs   = require("fs");
 var cv   = require("opencv");
 var Q    = require("q");
