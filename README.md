@@ -1,5 +1,12 @@
 # Assignment 2 - Motion detector
 
+## Motion server stable version
+
+This version is embeded on AWS/AMI machines. If you update this branch, be sure
+to update the AMI image by just running ```misc/Dockerfile``` on a Ubuntu machine.
+Remeber to login as ```lzfelix``` to download the private ```lzfelix/cab432```
+image.
+
 In order to build this project, you are going to need:
 
 - opencv 2.4.x
