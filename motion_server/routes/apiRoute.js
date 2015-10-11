@@ -1,9 +1,13 @@
+var path     = require("path")
+var camdata  = require("../serverjs/src/cameras.json")
+
 var tracker   = require("../serverjs/src/motionTracker.js")
 var validator = require("../serverjs/src/interfaceHandler.js");
 var auth      = require("../serverjs/src/auth.js");
 
 const BAD_REQUEST_HTML_CODE = validator.BAD_REQUEST_HTML_CODE;
-const INTERAL_ERROR_HTML_CODE = 500;
+const INTERNAL_ERROR_HTML_CODE = 500;
+const HTML_OK = 200;
 const JSON_MESSAGE_FIELD = "message";
 
 /**
@@ -17,7 +21,7 @@ function sendBadRequestResponse(res, msg) {
     var json = {}
     json[JSON_MESSAGE_FIELD] = msg;
 
-    res.json(BAD_REQUEST_HTML_CODE, json);
+    res.status(BAD_REQUEST_HTML_CODE).json(json);
 }
 
 /**
@@ -31,7 +35,7 @@ function sendErrorRequestResponse(res, msg) {
     var json = {}
     json[JSON_MESSAGE_FIELD] = msg;
 
-    res.json(INTERAL_ERROR_HTML_CODE, json);
+    res.status(INTERNAL_ERROR_HTML_CODE).json(json);
 }
 
 /**
@@ -44,7 +48,7 @@ function sendErrorRequestResponse(res, msg) {
  * @param  {function} next not used.
  * @return {nothing}
  */
-function artistRoute(req, res, next) {
+function camRoute(req, res, next) {
     var apiID = req.body.api;
 
     if (!auth.isValid(apiID))
@@ -57,7 +61,7 @@ function artistRoute(req, res, next) {
         else {
             tracker.jsonMultipleStreets_promise(validIds)
             .then(function (json) {
-                res.json(200, json);
+                res.status(HTML_OK).json(json);
             }).fail(function (err) {
                 sendErrorRequestResponse("An internal error has happened.")
             }).done();
@@ -65,4 +69,22 @@ function artistRoute(req, res, next) {
     }
 }
 
-module.exports.route = artistRoute;
+/**
+ * Returns the JSON containing cameras information.
+ * @param  {express.request}   req  A request object created by express.
+ * @param  {express.response}  res  A response object created by express
+ * @param  {function} next not used.
+ * @return {nothing}
+ */
+function jsonRoute(req, res, next) {
+    var apiID = req.params.api;
+
+    if (!auth.isValid(apiID))
+        sendBadRequestResponse(res, "Invalid API ID.");
+    else {
+        res.status(HTML_OK).json(camdata);
+    }
+}
+
+module.exports.camRoute = camRoute;
+module.exports.jsonRoute = jsonRoute;

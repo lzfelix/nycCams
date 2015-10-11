@@ -7,6 +7,7 @@ router.get('/', function(res, res, next) {
     res.render("form.ejs");
 });
 
-router.post('/cars', apiRoute.route);
+router.post('/cars', apiRoute.camRoute);
+router.get('/json/:api', apiRoute.jsonRoute);
 
 module.exports = router;
