@@ -1,0 +1,52 @@
+##########################################################
+# Cloud Computing 2015 - Assignment 2 - Motion Detector  #
+# NOT COMPLETELY SURE IF IT WORKS                        #
+# Student: Luiz Carlos Felix Ribeiro (n9383298)          #
+# Student: João Lucas Gonçalves Lucchetta (n9390383)     #
+##########################################################
+
+FROM ubuntu
+MAINTAINER Luiz Ribeiro
+
+# install opencv2.4 dependencies
+RUN sudo apt-get update
+RUN sudo apt-get install -y build-essential
+RUN sudo apt-get install -y cmake
+RUN sudo apt-get install -y libgtk2.0-dev
+RUN sudo apt-get install -y pkg-config
+RUN sudo apt-get install -y python-numpy python-dev
+RUN sudo apt-get install -y libavcodec-dev libavformat-dev libswscale-dev
+RUN sudo apt-get install -y libjpeg-dev libpng-dev libtiff-dev libjasper-dev
+RUN sudo apt-get install -y gcc
+RUN sudo apt-get install -y wget
+RUN sudo apt-get install -y unzip
+RUN sudo apt-get install -y libqt4-dev
+
+
+RUN sudo apt-get -qq install libopencv-dev build-essential checkinstall cmake pkg-config yasm libjpeg-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev python-dev python-numpy libtbb-dev libqt4-dev libgtk2.0-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils
+
+# download opencv-2.4.11
+RUN wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.11/opencv-2.4.11.zip
+RUN unzip opencv-2.4.11.zip
+WORKDIR /opencv-2.4.11
+RUN mkdir release
+WORKDIR /cd release
+
+# compile and install
+RUN cmake -G "Unix Makefiles" -D CMAKE_CXX_COMPILER=/usr/bin/g++ CMAKE_C_COMPILER=/usr/bin/gcc -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D BUILD_FAT_JAVA_LIB=ON -D INSTALL_TO_MANGLED_PATHS=ON -D INSTALL_CREATE_DISTRIB=ON -D INSTALL_TESTS=ON -D ENABLE_FAST_MATH=ON -D WITH_IMAGEIO=ON -D BUILD_SHARED_LIBS=OFF -D WITH_GSTREAMER=ON -D WITH_FFMPEG=OFF ..
+RUN make all -j4 # 4 cores
+RUN sudo make install
+
+
+# install nvm -- 4.x isn't stable with opencv yet
+RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+RUN . ~/.nvm/nvm.sh
+
+# install node 0.12.7 and set as default
+RUN nvm install 0.12.7
+RUN nvm alias default 0.12.7
+
+# installing git
+RUN sudo apt-get install -y git
+
+WORKDIR /bin/bash
