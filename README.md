@@ -22,8 +22,8 @@ everything is going to be fine
 | ~~Require authentication before serving API ~~ | Extra / Done |
 | ~~Set up a load balancer to handle load on the processing server~~| Done |
 | ~~Test manual scaling with this server~~ | Done |
-| Configure automatic scale out/in using the load balancer| To do |
-| Implement the presentation server    | To do|
+| ~~Configure automatic scale out/in using the load balancer~~ | Done |
+| Implement the presentation server    | To do |
 | Implement database to keep track of most accessed cameras| To do |
 |: **FRONT END** :|
 | ~~Collect (lat,long) location of the cameras based on its address~~ | Done |
