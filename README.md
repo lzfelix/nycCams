@@ -33,6 +33,9 @@ everything is going to be fine
 | Develop statistics page layout |To do |
 | Embed jQuery on this page to keep statistics updated |To do |
 
+## DB Login details
+```mssql -s zw9rn5s0y6.database.windows.net -u nyc_user -p v@c4jairo -d nycdb -e```
+
 ## AWS Service configuration
 
 ### 1. Creating a Virtual Private Cloud (VPC)
