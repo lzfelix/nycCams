@@ -15,16 +15,16 @@ everything is going to be fine
 
 | Task           | Status         |
 |----------------|:----------------:|
-|: **Back end**                      :|
+| **~~Back end~~**                      |
 | ~~Implementing motion detection algorithm~~     | Done |
 | ~~Group cameras location on a single j​son​ file~~ | Done |
 | ~~Creating a server which receives a camera request and counts the amount of cars~~ | Done |
-| ~~Require authentication before serving API ~~ | Extra / Done |
+| ~~Require authentication before serving API~~ | Extra / Done |
 | ~~Set up a load balancer to handle load on the processing server~~| Done |
 | ~~Test manual scaling with this server~~ | Done |
-| Configure automatic scale out/in using the load balancer| To do |
-| Implement the presentation server    | To do|
-| Implement database to keep track of most accessed cameras| To do |
+| ~~Configure automatic scale out/in using the load balancer~~ | Done |
+| ~~Implement database to keep track of most accessed cameras~~ | Done |
+| Remove / route from back server (only before submitting)| To do |
 |: **FRONT END** :|
 | ~~Collect (lat,long) location of the cameras based on its address~~ | Done |
 | Develop the first page, where the user can select which cameras he wants to monitor | To do |
