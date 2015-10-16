@@ -28,10 +28,9 @@
             <div id="map-canvas" class="flex-video"></div>
         </div>
         <div class="col-md-4">
-            <form action="/cars" method="post">
-                <input type="text" name="camIds">
-                <input type="hidden" name="api" value="dc657b32097507ca7d98442fa52d2d85">
-                <input type="submit">
+            <form id="watch-form" method="GET" action="/watch">
+                <input type="text" name="camIds" readonly>
+                <input type="submit" id="form-submit">
             </form>
         </div>
     </div>
@@ -42,6 +41,33 @@
     <script src="https://maps.googleapis.com/maps/api/js?key={{keys.maps}}&signed_in=true"></script>
     <script src="/js/gmaps.js" type="text/javascript"></script>
     <script src="/js/map-cams.js" type="text/javascript"></script>
+    <script>
+        /* $(document).ready(function () {
+
+                                    $('#watch-form').submit(function (e) {
+
+                                        var postData = $(this).serializeArray();
+
+                                        $.ajax({
+                                            type: "POST",
+                                            url: "/watch",
+                                            data: postData,
+                                            success: function (d) {
+                                                var pageurl = "/watch";
+                                                if (pageurl != window.location) {
+                                                    window.history.pushState({
+                                                        path: pageurl
+                                                    }, '', pageurl);
+                                                }
+                                                $('html').html(d);
+                                            }
+                                        });
+                                        e.preventDefault();
+                                        e.unbind();
+                                    });
+
+                                });*/
+    </script>
 </div>
 <!-- /container -->
 {{>footer.partial}}
