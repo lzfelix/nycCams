@@ -1,10 +1,17 @@
-{{#>header.partial title="Camera Watch"}} {{/header.partial}}
-<div class="container">
+{{>header.partial title="Camera Watch"}} {{#each cam}}
+<div class="row">
+    <div class="col-md-3">
+        <img src="{{URL}}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <h3>{{address}}</h3>
+        <small>{{lat}},{{long}}</small>
+        <br/> Cars detected in the driveway: {{num_cars}}
+    </div>
+    <div class="col-md-3">
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center={{lat}},{{long}}&zoom=18&scale=false&size=352x240&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:red%7C{{lat}},{{long}}" alt="{{address}}" class="img-responsive">
 
-    {{cam}}
-    <h3>{{address}}</h3>
-    <small>{{lat}},{{long}}</small>
-    <br/> Cars detected in the driveway: {{num_cars}} amém batata
+    </div>
 </div>
 
-{{#>footer.partial}} {{/footer.partial}}
+<hr/> {{/each}} {{>footer.partial}}

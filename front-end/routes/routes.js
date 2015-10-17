@@ -95,24 +95,22 @@ router.get('/watch',
                     // the data returned to the client
                     var data = {}
 
-                    // Adding the number of cars from the backend to the info array
-                    // needs to copy this data into an VALID JSON object, as camsInfo
-                    // is a mysterious data structure. Seriously, you should take a look
-                    // on how this DS is working, as it doesn't print anywhing on console.log
-                    // (actually I know that it's a kinda JSON on the format
-                    // [field : {innermost_json}]) and this is forbidden by JSON syntax. The
-                    // correct for is:
-                    // { field : {innermost_json}}, using curly braces and not square brackets.
+                    //Adding the number of detected cars to the array
                     for (cam in camsInfo) {
                         data[cam] = camsInfo[cam];
                         data[cam].num_cars = body[cam].valueOf();
                     }
 
-                    res.status(200).json(data);
+                    //res.status(200).json(data);
+                    res.render('details', {
+                        cam: data
+                    });
                 })
                 // Error Handling
                 .catch(function (err) {
-                    res.status(500).send({"message" : "an internal error has happened. (Is this cam id < 452?)"});
+                    res.status(500).send({
+                        "message": "an internal error has happened. (Is this cam id < 452?)"
+                    });
                 });
         });
 
@@ -181,8 +179,7 @@ function getCamsJson() {
         function (err, resp, data) {
             if (!err && resp.statusCode == 200) {
                 deferred.resolve(JSON.parse(data));
-            }
-            else
+            } else
                 deferred.reject(err);
         });
 
