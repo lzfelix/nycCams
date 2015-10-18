@@ -62,8 +62,6 @@ router.get('/watch',
         // If the last character is a comma, removes it
         cams = cams.slice(-1) == "," ? cams.substr(0, cams.length - 1) : cams;
 
-
-
         /*
          * Posting the request to the backend server.
          * From its response, renders a detailed view (or an error one)
@@ -78,33 +76,43 @@ router.get('/watch',
                 api: keys.backend_server
             }
         }, function (err, response, body) {
-
+            console.log(body);
             body = JSON.parse(body);
 
 
             var targetCams = [];
 
-
             // Creating a list of cams to be
             for (cam in body) {
+                console.log("FE -> " + cam)
                 targetCams.push(cam);
             }
 
+            console.log("PARA -> " + targetCams)
+
             getCamInfo(targetCams)
                 .then(function (camsInfo) {
+                    // the data returned to the client
+                    var data = {}
 
                     // Adding the number of cars from the backend to the info array
+                    // needs to copy this data into an VALID JSON object, as camsInfo
+                    // is a mysterious data structure. Seriously, you should take a look
+                    // on how this DS is working, as it doesn't print anywhing on console.log
+                    // (actually I know that it's a kinda JSON on the format
+                    // [field : {innermost_json}]) and this is forbidden by JSON syntax. The
+                    // correct for is:
+                    // { field : {innermost_json}}, using curly braces and not square brackets.
                     for (cam in camsInfo) {
-                        camsInfo[cam]['num_cars'] = body[cam].valueOf();
+                        data[cam] = camsInfo[cam];
+                        data[cam].num_cars = body[cam].valueOf();
                     }
-                    //Updating the data to be rendered
-                    console.log(camsInfo); //Outputs normally
 
-                    res.send(JSON.stringify(camsInfo)); //Simple response without view.
+                    res.status(200).json(data);
                 })
-                //Error Handling
+                // Error Handling
                 .catch(function (err) {
-                    res.status(500).send(err);
+                    res.status(500).send({"message" : "an internal error has happened. (Is this cam id < 452?)"});
                 });
         });
 
@@ -141,12 +149,17 @@ function getCamInfo(camIds) {
 
     var finalCamInfoObj = [];
 
+    console.log("camIds -> " + camIds);
+
     getCamsJson()
         .then(function (camsJSON) {
+
+
             camIds.map(function (cam) {
                 finalCamInfoObj[cam] = camsJSON[cam];
             });
 
+            // console.log(finalCamInfoObj);
             deferred.resolve(finalCamInfoObj);
         })
         .catch(function (e) {
@@ -169,8 +182,10 @@ function getCamsJson() {
             if (!err && resp.statusCode == 200) {
                 deferred.resolve(JSON.parse(data));
             }
-            deferred.reject(err);
+            else
+                deferred.reject(err);
         });
+
     return deferred.promise;
 }
 
