@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
 var Q = require('q');
+var dbase = require('./../helpers/db-update.js');
 
 
 var keys = require('./../config/api-keys.json');
@@ -34,8 +35,8 @@ router.get('/',
 
 router.get('/watch',
     /**
-     * This function handles the POST requests to the /watch route.
-     * It will take the <code>camIds</code> value send in the request body
+     * This function handles the GET requests to the /watch route.
+     * It will take the <code>camIds</code> value send in the request PARAMS
      * and request data from the backend server.
      * After that, it renders a response page with the data.
      *
@@ -82,13 +83,20 @@ router.get('/watch',
 
             var targetCams = [];
 
-            // Creating a list of cams to be
+            // Creating a list of cams to be watched.
             for (cam in body) {
-                console.log("FE -> " + cam)
                 targetCams.push(cam);
+                var camId = String(cam).replace("cam", ""); //Removing the keyword 'cam' from the ID first
+                //And then updating the view count in the data base.
+                dbase.updateAccess_promise(camId)
+                    .then(function () {
+                        console.log(cam + " Updated.");
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
 
-            console.log("PARA -> " + targetCams)
 
             getCamInfo(targetCams)
                 .then(function (camsInfo) {
