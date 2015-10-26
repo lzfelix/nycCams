@@ -2,7 +2,7 @@ FROM lzfelix/cab432:latest
 MAINTAINER lzfelix
 
 # wow
-RUN sudo ln /dev/null /dev/raw1394
+RUN sudo apt-get update
 
 # Pushing the private key on root. This is going to overwrite the previous PK,
 # which is not a problem, since it was never used. The key is already protected,
