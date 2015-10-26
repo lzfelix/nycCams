@@ -1,0 +1,50 @@
+{{>header.partial title="Homepage"}}
+
+<div class="row">
+    <div class="map col-md-8">
+        <div id="map-canvas" class="flex-video"></div>
+    </div>
+    <div class="col-md-4">
+        <form id="watch-form" method="GET" action="/watch">
+            <input type="text" name="camIds" readonly>
+            <input type="submit" id="form-submit">
+        </form>
+    </div>
+</div>
+
+
+<!-- Scripts in the end to optimise page load     -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{keys.maps}}&signed_in=true"></script>
+<script src="/js/gmaps.js" type="text/javascript"></script>
+<script src="/js/map-cams.js" type="text/javascript"></script>
+<script>
+    /* $(document).ready(function () {
+
+                                            $('#watch-form').submit(function (e) {
+
+                                                var postData = $(this).serializeArray();
+
+                                                $.ajax({
+                                                    type: "POST",
+                                                    url: "/watch",
+                                                    data: postData,
+                                                    success: function (d) {
+                                                        var pageurl = "/watch";
+                                                        if (pageurl != window.location) {
+                                                            window.history.pushState({
+                                                                path: pageurl
+                                                            }, '', pageurl);
+                                                        }
+                                                        $('html').html(d);
+                                                    }
+                                                });
+                                                e.preventDefault();
+                                                e.unbind();
+                                            });
+
+                                        });*/
+</script>
+
+<!-- /container -->
+{{>footer.partial}}
