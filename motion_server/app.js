@@ -18,10 +18,9 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-// enabling white-listed domain to CORS
-var corsOptions = {
-    origin: "http://nyc-cameras.cloudapp.net/"
-};
+// enabling cors to everybody -- needs to, as the clients are going to fire requests
+// to this server.
+app.use(cors())
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -29,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', cors(corsOptions), routes);
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
