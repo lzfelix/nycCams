@@ -1,0 +1,19 @@
+{
+  "name": "all-seeing-eye-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "consolidate": "^0.13.1",
+    "express": "~4.13.1",
+    "handlebars": "^4.0.3",
+    "jsdoc": "^3.3.3",
+    "q": "^1.4.1",
+    "request": "^2.64.0",
+    "tedious": "^1.12.3",
+    "tedious-promises": "^0.3.0"
+  }
+}

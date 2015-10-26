@@ -34,11 +34,14 @@ everything is going to be fine
 | Remove / route from back server (only before submitting)| To do |
 |: **FRONT END** :|
 | ~~Collect (lat,long) location of the cameras based on its address~~ | Done |
-| Develop the first page, where the user can select which cameras he wants to monitor | To do |
-| Embed Google Maps in this fist page |To do |
+| ~~Develop the first page, where the user can select which cameras he wants to monitor~~ | Done |
+| ~~Embed Google Maps in this fist page ~~ | Done |
 | Retrieve popular cameras from the Database | To do |
 | Develop statistics page layout |To do |
 | Embed jQuery on this page to keep statistics updated |To do |
+
+## DB Login details
+```mssql -s zw9rn5s0y6.database.windows.net -u nyc_user -p v@c4jairo -d nycdb -e```
 
 ## AWS Service configuration
 
