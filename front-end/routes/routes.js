@@ -77,49 +77,63 @@ router.get('/watch',
                 api: keys.backend_server
             }
         }, function (err, response, body) {
-            console.log(body);
-            body = JSON.parse(body);
+
+            if (err || response.statusCode != 200 || !body) {
+
+                var msg = "An internal error has happened. Please try again in a few minutes.";
+                if (err) msg += err;
+                else if (response.statusCode) msg += response.statusCode;
+                else if (!body) msg += " Body null";
+
+                res.status(500).send({
+                    "message": msg
+                });
+            } else {
+
+                console.log(body);
+                body = JSON.parse(body);
+
+                var targetCams = [];
+
+                // Creating a list of cams to be watched.
+                for (cam in body) {
+                    targetCams.push(cam);
+                    var camId = String(cam).replace("cam", ""); //Removing the keyword 'cam' from the ID first
+                    //And then updating the view count in the data base.
+                    dbase.updateAccess_promise(camId)
+                        .then(function () {
+                            console.log(cam + " Updated.");
+                        })
+                        .catch(function (error) {
+                            console.log(error);
+                        });
+                }
 
 
-            var targetCams = [];
 
-            // Creating a list of cams to be watched.
-            for (cam in body) {
-                targetCams.push(cam);
-                var camId = String(cam).replace("cam", ""); //Removing the keyword 'cam' from the ID first
-                //And then updating the view count in the data base.
-                dbase.updateAccess_promise(camId)
-                    .then(function () {
-                        console.log(cam + " Updated.");
+                getCamInfo(targetCams)
+                    .then(function (camsInfo) {
+                        // the data returned to the client
+                        var data = {}
+
+                        //Adding the number of detected cars to the array
+                        for (cam in camsInfo) {
+                            data[cam] = camsInfo[cam];
+                            data[cam].num_cars = body[cam].valueOf();
+                        }
+
+                        //res.status(200).json(data);
+                        res.render('details', {
+                            cam: data
+                        });
                     })
-                    .catch(function (error) {
-                        console.log(error);
+                    // Error Handling
+                    .catch(function (err) {
+                        res.status(500).send({
+                            "message": "an internal error has happened. (Is this cam id < 452?)"
+                        });
                     });
             }
-
-
-            getCamInfo(targetCams)
-                .then(function (camsInfo) {
-                    // the data returned to the client
-                    var data = {}
-
-                    //Adding the number of detected cars to the array
-                    for (cam in camsInfo) {
-                        data[cam] = camsInfo[cam];
-                        data[cam].num_cars = body[cam].valueOf();
-                    }
-
-                    //res.status(200).json(data);
-                    res.render('details', {
-                        cam: data
-                    });
-                })
-                // Error Handling
-                .catch(function (err) {
-                    res.status(500).send({
-                        "message": "an internal error has happened. (Is this cam id < 452?)"
-                    });
-                });
         });
 
     });

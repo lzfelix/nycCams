@@ -1,4 +1,4 @@
 {
-    "cars_detection": "http://nyc-balancer-1920328868.ap-southeast-2.elb.amazonaws.com/cars",
-    "cams_json": "http://nyc-balancer-1920328868.ap-southeast-2.elb.amazonaws.com/json/"
+    "cars_detection": "http://52.64.254.156/cars",
+    "cams_json": "http://52.64.254.156/json/"
 }
