@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
+var rp = require('request-promise');
+
 var Q = require('q');
 var dbase = require('./../helpers/db-update.js');
 
@@ -33,7 +35,97 @@ router.get('/',
         });
     });
 
+
 router.get('/watch',
+    /**
+     * This function handles the GET requests to the /watch route.
+     * It will take the <code>camIds</code> value send in the request PARAMS
+     * and request data from the backend server.
+     * After that, it renders a response page with the data.
+     *
+     * @param {Object} req The content of the request.
+     * @param {Object} res The response body to be returned
+     * @returns {Object} <code>res</code> The response to the client.
+     */
+    function (req, res) {
+        //Handling requests with null body
+        if (!req.query) {
+            return res.sendStatus(400);
+        }
+
+        // Error handling if the camIds weren't passed.
+        try {
+            var cams = req.query.camIds;
+        } catch (e) {
+            return res.sendStatus(400);
+        }
+        //If so, removes the 'cam' keywords from it and removes the last comma before requesting from the server
+        cams = cams.replace(/cam/g, '');
+
+        // If the last character is a comma, removes it
+        cams = cams.slice(-1) == "," ? cams.substr(0, cams.length - 1) : cams;
+
+        var splittedCams = cams.split(",");
+        var groups = [];
+        while (splittedCams.length > 0) {
+            groups.push(splittedCams.splice(0, 3));
+        }
+        splittedCams = groups;
+
+
+        //For every chunk in the object
+        for (part in splittedCams) {
+            // Transforming the chunk object back into an Array.
+            var joined = Object.keys(splittedCams[part]).map(function (k) {
+                return splittedCams[part][k];
+            });
+            joined = joined.join(","); //Transforming the array in a comma separated string
+
+            splittedCams[part] = joined; //Adding it to the parent array
+        }
+
+        var backendDataPromises = [];
+        //Creating an array of promisses to dinamically call all the functions asynchronously
+        for (i = 0; i < splittedCams.length; i++) {
+            backendDataPromises.push(requestBackendData(splittedCams[i]));
+        }
+        var camDetails = [];
+
+        getCamsJson().then(function (details) {
+                camDetails = details;
+            })
+            .catch(function () {
+                res.send({
+                    message: "It wasn't possible to retrieve the cams details now. Please try again in a few minutes."
+                });
+            })
+            //Requests data from all of them
+        var finalJSON = {};
+
+        Q.all(backendDataPromises)
+            .then(function (data) {
+                for (block in data) { //For each block of cams
+                    for (cam in data[block]) { //We run through every cam
+                        finalJSON[cam] = camDetails[cam];
+                        finalJSON[cam]["num_cars"] = data[block][cam];
+                    }
+                }
+
+                //res.json(finalJSON);
+                res.render('details', {
+                    cam: finalJSON
+                })
+            })
+            .fail(function (err) {
+                res.json({
+                    message: "Error:" + err
+                })
+            });
+
+    });
+
+
+router.get('/watcha',
     /**
      * This function handles the GET requests to the /watch route.
      * It will take the <code>camIds</code> value send in the request PARAMS
@@ -140,19 +232,6 @@ router.get('/watch',
     });
 
 
-router.post('/watch',
-    /**
-     * Serves and error if the route is accessed via GET,
-     * since the necessary data has to be passed through the POST method.
-     *
-     * @param {[[Type]]} req The content of the request.
-     * @param {[[Type]]} res The response body to be returned
-     */
-    function (req, res) {
-        res.send("404");
-    }
-);
-
 /* HELPER FUNCTIONS SECTION */
 
 /**
@@ -208,6 +287,35 @@ function getCamsJson() {
 
     return deferred.promise;
 }
+/**
+ * This function requests data from the backend.
+ * Should be used with smaller sets of (around 3) camIds instead of huge ones.
+ *
+ * @param {String} the camera Ids which data should be requested.
+ * @returns {Promise} A promise with the data or with an error message
+ */
+function requestBackendData(camIds) {
+    var deferred = Q.defer();
+    rp.post({
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            url: backendRoutes.cars_detection,
+            form: {
+                camIds: camIds,
+                api: keys.backend_server
+            }
+        })
+        .then(function (data) {
 
+
+            deferred.resolve(JSON.parse(data));
+        })
+        .catch(function (error) {
+
+            deferred.reject(error);
+        })
+    return deferred.promise;
+}
 
 module.exports = router;

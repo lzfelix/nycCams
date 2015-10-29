@@ -13,6 +13,7 @@
     "jsdoc": "^3.3.3",
     "q": "^1.4.1",
     "request": "^2.64.0",
+    "request-promise": "^1.0.2",
     "tedious": "^1.12.3",
     "tedious-promises": "^0.3.0"
   }
