@@ -122,6 +122,7 @@ router.get('/watch',
                             data[cam].num_cars = body[cam].valueOf();
                         }
 
+
                         //res.status(200).json(data);
                         res.render('details', {
                             cam: data

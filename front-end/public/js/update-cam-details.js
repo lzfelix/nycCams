@@ -37,6 +37,13 @@ $(document).ready(function () {
 
     getCamData(splittedCams);
 
+    /* if (camData.indexOf("message") > 1) {
+     console.log(camData["message"]);
+ } else {
+     console.dir(data);
+ }*/
+
+
     /**
      * This function request the data from the backend about the cameras' current state
      *
@@ -44,18 +51,17 @@ $(document).ready(function () {
      */
     function getCamData(camIds) {
 
-        /**
+        /*
          * Creating dynamically an array of Ajax call promises, according to
          * the number of chunks in the Array.
          */
         var ajaxPromisesArray = [];
 
+
+        var deferred = $.Deferred();
+
         // For each chunk
-
-
         for (potato in camIds) {
-
-            console.log("Chunk " + potato + " - " + camIds[potato]);
 
             // Array of Promises to be passed as an argument
             ajaxPromisesArray.push(
@@ -73,21 +79,36 @@ $(document).ready(function () {
 
         // Waits for all the chunks AJAX calls to finish
         $.when.apply($, ajaxPromisesArray)
-            //  And then creates an object by concatenating them into one single
-            .then(function () {
+
+        //  And then creates an object by concatenating them into one single
+        .then(function () {
 
                 var newJSON = {};
-                // Creates a new object to hold all the data from the server
-                for (data in arguments) {
-                    var curr = arguments[data][0];
-                    for (cam in curr) {
-                        newJSON[cam] = curr[cam];
+                if (arguments[1] == false) {
+
+                    // Creates a new object to hold all the data from the server
+                    for (data in arguments) {
+                        var curr = arguments[data][0];
+                        for (cam in curr) {
+                            newJSON[cam] = curr[cam];
+                        }
                     }
+                } else {
+                    newJSON = arguments[0];
                 }
-                console.dir(newJSON);
+
+
+
+                for (cam in newJSON) {
+                    $("#" + cam).html(newJSON[cam]);
+                    console.log("Trocou. " + "#" + cam);
+                }
+
             })
             .fail(function (data) {
-                console.error(data);
+                console.log("There was an error while updating the cams data.");
+            }).done(function () {
+
             });
     }
 
