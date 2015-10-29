@@ -35,13 +35,12 @@ $(document).ready(function () {
     console.dir(splittedCams);
 
 
-    getCamData(splittedCams);
 
-    /* if (camData.indexOf("message") > 1) {
-     console.log(camData["message"]);
- } else {
-     console.dir(data);
- }*/
+
+    getCamData(splittedCams)
+
+
+
 
 
     /**
@@ -67,7 +66,7 @@ $(document).ready(function () {
             ajaxPromisesArray.push(
                 $.ajax({
                     method: "POST",
-                    url: 'http://52.64.254.156/cars',
+                    url: 'http://nyc-balancer-1920328868.ap-southeast-2.elb.amazonaws.com/cars',
                     //url: 'http://nyc-balancer-1920328868.ap-southeast-2.elb.amazonaws.com/cars',
                     data: {
                         camIds: camIds[potato],
@@ -84,20 +83,25 @@ $(document).ready(function () {
         .then(function () {
 
                 var newJSON = {};
-                if (arguments[1] == false) {
-
-                    // Creates a new object to hold all the data from the server
-                    for (data in arguments) {
-                        var curr = arguments[data][0];
-                        for (cam in curr) {
-                            newJSON[cam] = curr[cam];
+                if (arguments.length > 1 && arguments[1] !== "success") {
+                    //If more than one AJAX response, then follows through them doing the same as if there was only one
+                    for (i = 0; i < arguments.length; i++) {
+                        chunk = arguments[i][0];
+                        // Creates a new obfor(chunk in argument)ject to hold all the data from the server
+                        for (id in chunk) {
+                            var curr = chunk[id];
+                            newJSON[id] = curr;
                         }
                     }
-                } else {
-                    newJSON = arguments[0];
                 }
+                //If only one AJAX RESPONSE
+                else {
+                    var curr = arguments[0];
+                    for (cam in curr) {
+                        newJSON[cam] = curr[cam];
+                    }
 
-
+                }
 
                 for (cam in newJSON) {
                     $("#" + cam).html(newJSON[cam]);
@@ -107,8 +111,8 @@ $(document).ready(function () {
             })
             .fail(function (data) {
                 console.log("There was an error while updating the cams data.");
-            }).done(function () {
-
+            }).always(function () {
+                getCamData(camIds)
             });
     }
 
