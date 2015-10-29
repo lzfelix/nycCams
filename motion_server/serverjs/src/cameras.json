@@ -368,8 +368,8 @@
 	"cam361" : {
 		"address"	: "WSE03 SB at Bloomingdale Rd-Ex3",
 		"URL"		: "http://207.251.86.238/cctv619.jpg",
-		"lat"		: "41.957529",
-		"long"		: "-88.080904"
+		"lat"		: "40.712784",
+		"long"		: "-74.005941"
 	},
 	"cam450" : {
 		"address"	: "West Shore Expy @ Arden Ave",
@@ -434,8 +434,8 @@
 	"cam175" : {
 		"address"	: "West Street @ Intrepid",
 		"URL"		: "http://207.251.86.238/cctv90.jpg",
-		"lat"		: "43.003461",
-		"long"		: "-76.128149"
+		"lat"		: "40.818901",
+		"long"		: "-74.005941"
 	},
 	"cam174" : {
 		"address"	: "West St @ West Houston St",
@@ -1388,8 +1388,8 @@
 	"cam229" : {
 		"address"	: "Hamilton Ave @ Hamilton PL @ 15 St (S SR)",
 		"URL"		: "http://207.251.86.238/cctv764.jpg",
-		"lat"		: "42.810218",
-		"long"		: "-75.51829"
+		"lat"		: "40.675723",
+		"long"		: "-74.000778"
 	},
 	"cam393" : {
 		"address"	: "Van Wyck Expwy @ 109 Ave",
@@ -2600,8 +2600,8 @@
 	"cam269" : {
 		"address"	: "Macombs Dam Bridge @ E 161 St",
 		"URL"		: "http://207.251.86.238/cctv707.jpg",
-		"lat"		: "44.48503",
-		"long"		: "-75.580018"
+		"lat"		: "40.828494",
+		"long"		: "-73.930369"
 	},
 	"cam268" : {
 		"address"	: "Macombs Dam Bridge",

@@ -3,7 +3,7 @@ var apiRoute = require("./apiRoute.js");
 
 var router = express.Router();
 
-router.get('/', function(res, res, next) {
+router.get('/debug', function(res, res, next) {
     res.render("form.ejs");
 });
 
