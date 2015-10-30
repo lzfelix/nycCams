@@ -1,15 +1,44 @@
 {{>header.partial title="Homepage"}}
 
 <div class="row">
-    <div class="map col-md-8">
+    <div class="map col-md-7">
         <div id="map-canvas" class="flex-video"></div>
     </div>
-    <div class="col-md-4">
-        <form id="watch-form" method="GET" action="/watch">
-            <input type="text" name="camIds" readonly>
-            <input type="submit" id="form-submit">
-        </form>
+    <div class="col-md-5">
+        <div>
+            <h3 style="">Keep an eye out for your streets online!</h3>
+            <p>
+                <u><b>Select the cameras you wanna check, and we'll do the work for you:</b></u>
+                <br>We'll check the cameras and give you back information of how many cars moving we can find in the images; And if you leave it open, we will keep it updated! How awesome is that?!</p>
+        </div>
+        <div>
+            <form id="watch-form" method="GET" action="/watch">
+                <div class="form-group">
+                    <label for="camIds">You have selected:</label>
+                    <input type="text" class="form-control" name="camIds" id="camIds" placeholder="Cams here" readonly>
+                </div>
+                <button type="reset" class="btn btn-default">Reset</button>
+                <span class="pull-right">
+                <button type="submit" class="btn btn-success">Submit</button>
+                </span>
+            </form>
+        </div>
     </div>
+</div>
+<div class="row">
+    <h4>Most popular:</h4>
+    <br> {{#each cam}}
+    <div class="col-md-3" style="text-align:center">
+        <a href="{{this.URL}}">
+            <img src="{{this.URL}}" class="img-responsive">
+        </a>
+        <h5>{{this.address}}</h5> {{this.accesses}} views
+    </div>
+    {{else}}
+    <center>
+        <h3 style="color:#8195BD;">It was not possible to retrieve the most accessed cams now. Try again later.</h3>
+    </center>
+    {{/each}}
 </div>
 
 

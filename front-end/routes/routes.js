@@ -24,15 +24,67 @@ router.get('/',
      * @param {[[Type]]} res The response body to be returned
      */
     function (req, res) {
-        res.render("homepage", {
-            "keys": {
-                "maps": keys.maps
-            },
-            "style": [
-            "/css/home.css"
-        ]
 
-        });
+        var topCameras = [];
+        dbase.getTopCameras_promise(4).then(function (data) {
+                topCameras = data;
+            })
+            .then(function () {
+
+
+
+                var JSONCams = {};
+                getCamsJson().then(function (camDetails) {
+
+                    for (cam in topCameras) {
+
+                        JSONCams["cam" + topCameras[cam]["id"]] = camDetails["cam" + topCameras[cam]["id"]]
+                        JSONCams["cam" + topCameras[cam]["id"]]["accesses"] = topCameras[cam]["accesses"]
+                            //console.log(camDetails["cam" + topCameras[cam]["id"]]);
+                    }
+                    console.dir(JSONCams);
+
+                    res.render("homepage", {
+                        "keys": {
+                            "maps": keys.maps
+                        },
+                        "style": [
+                         "/css/home.css",
+                        "/css/master.css"
+                        ],
+                        "cam": JSONCams,
+                    });
+
+
+                }).catch(function () {
+                    res.render("homepage", {
+                        "keys": {
+                            "maps": keys.maps
+                        },
+                        "style": [
+                         "/css/home.css",
+                        "/css/master.css"
+                    ],
+                        cam: null,
+                    });
+                })
+
+
+            })
+            .catch(function (err) {
+                //If any errors happened, renders it as null and lets the view treat the lack of info
+                res.render("homepage", {
+                    "keys": {
+                        "maps": keys.maps
+                    },
+                    "style": [
+                         "/css/home.css",
+                        "/css/master.css"
+                    ],
+                    topCam: null
+                });
+            })
+
     });
 
 
@@ -108,12 +160,28 @@ router.get('/watch',
                     for (cam in data[block]) { //We run through every cam
                         finalJSON[cam] = camDetails[cam];
                         finalJSON[cam]["num_cars"] = data[block][cam];
+
+                        console.log(cam);
+
+                        var camId = String(cam).replace("cam", ""); //Removing the keyword 'cam' from the ID first
+                        //And then updating the view count in the data base.
+                        dbase.updateAccess_promise(camId)
+                            .then(function (results) {
+                                console.log("Successfully updated stats ");
+                            })
+                            .catch(function (error) {
+                                console.log("Error" + error);
+                            });
                     }
                 }
 
-                //res.json(finalJSON);
+                // Rendering the final response to the user
                 res.render('details', {
-                    cam: finalJSON
+                    cam: finalJSON,
+                    "style": [
+                        "/css/details.css",
+                        "/css/master.css"
+                    ]
                 })
             })
             .fail(function (err) {
@@ -197,7 +265,7 @@ router.get('/watcha',
                             console.log(cam + " Updated.");
                         })
                         .catch(function (error) {
-                            console.log(error);
+                            console.log("Error" + error);
                         });
                 }
 

@@ -105,14 +105,31 @@ $(document).ready(function () {
 
                 for (cam in newJSON) {
                     $("#" + cam).html(newJSON[cam]);
-                    console.log("Trocou. " + "#" + cam);
+                    console.log("Updated " + "#" + cam);
+
                 }
 
+                function cacheBuster(url) {
+                    return url.replace(/\?t=\d*/, "") + "?t=" + new Date().getTime().toString();
+                }
+
+                $("img").each(function () {
+                    this.src = cacheBuster(this.src);
+                });
+
+                var now = new Date();
+                var str = now.getUTCFullYear().toString() + "/" +
+                    (now.getUTCMonth() + 1).toString() +
+                    "/" + now.getUTCDate() + " " + now.getUTCHours() +
+                    ":" + now.getUTCMinutes() + ":" + now.getUTCSeconds();
+                $("#updateTime").html("Last updated at " + str);
             })
             .fail(function (data) {
                 console.log("There was an error while updating the cams data.");
             }).always(function () {
-                getCamData(camIds)
+                setTimeout(function () {
+                    getCamData(camIds)
+                }, 10000);
             });
     }
 

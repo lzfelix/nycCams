@@ -22,7 +22,7 @@ $(document).ready(function () {
     }
 
 
-    $.getJSON("https://gist.githubusercontent.com/joaolucasl/703cc4293b8b1a59bdb2/raw/ed3b491d86d9d9c3f9adb3a8dd32b1f24983b2a3/all-seeing-eye.json",
+    $.getJSON("http://nyc-balancer-1920328868.ap-southeast-2.elb.amazonaws.com/json/dc657b32097507ca7d98442fa52d2d85",
         /**
          * This function gets the data from the JSON and creates the markers in the map,
          * with their respective functions, locations and callback functions.
@@ -49,7 +49,7 @@ $(document).ready(function () {
                     icon: "/img/marker-normal.png", //Custom icon
                     infoWindow: {
                         //content: "<img src='" + value['URL'] + "' style='max-height:150px;'>"
-                        content: "<h5>" + value['address'] + "</h5>"
+                        content: "<h5 style='color:#000000'>" + value['address'] + "</h5>"
                     },
                     click: function () {
                         toggleCam(this.title);
