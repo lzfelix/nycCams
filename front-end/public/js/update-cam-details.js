@@ -113,7 +113,7 @@ $(document).ready(function () {
                     return url.replace(/\?t=\d*/, "") + "?t=" + new Date().getTime().toString();
                 }
 
-                $("img").each(function () {
+                $(".cam-img").each(function () {
                     this.src = cacheBuster(this.src);
                 });
 
