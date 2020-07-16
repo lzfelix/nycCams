@@ -36,8 +36,6 @@ function updateAccess_promise(camId) {
  *                         due to network or SQL faults.
  */
 function getTopCameras_promise(maxRows) {
-//     var deferred = Q.defer();
-
     if (Number(maxRows) !== maxRows || maxRows < 0)
         Promise.reject(new Error("Invalid parameter maxRows."))
     else {
