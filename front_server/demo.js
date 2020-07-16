@@ -36,21 +36,15 @@ function updateAccess_promise(camId) {
  *                         due to network or SQL faults.
  */
 function getTopCameras_promise(maxRows) {
-    var deferred = Q.defer();
+//     var deferred = Q.defer();
 
     if (Number(maxRows) !== maxRows || maxRows < 0)
-        deferred.reject(new Error("Invalid parameter maxRows."))
+        Promise.reject(new Error("Invalid parameter maxRows."))
     else {
         //unfortunately tp doesn't allow to use tokens with top. This is unsafe, but since
         //only the programmer is using this method, it's kind of ok
-        tp.sql("select top "+maxRows+" id, accesses from cameras order by accesses desc")
+        return tp.sql("select top "+maxRows+" id, accesses from cameras order by accesses desc")
         .execute()
-        .then(function(rows) {
-            deferred.resolve(rows);
-        })
-        .fail(function (err) {
-            deferred.reject(err);
-        });
     }
 
     return deferred.promise;
