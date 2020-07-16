@@ -17,7 +17,7 @@ tp.setConnectionConfig({
  *                             was updated. The promise may be refused only if
  *                             there's a network issue or camId is invalid.
  */
-function updateAccess_promise(camId) {
+function updateAccess(camId) {
     return tp.sql("update cameras set accesses = accesses + 1 where id = @id")
     .parameter('id', TYPES.Int, camId)
     .execute();
@@ -35,7 +35,7 @@ function updateAccess_promise(camId) {
  *                         performed on it. This promise may be rejected either
  *                         due to network or SQL faults.
  */
-function getTopCameras_promise(maxRows) {
+function getTopCameras(maxRows) {
     if (Number(maxRows) !== maxRows || maxRows < 0)
         Promise.reject(new Error("Invalid parameter maxRows."))
     else {
@@ -48,8 +48,11 @@ function getTopCameras_promise(maxRows) {
     return deferred.promise;
 }
 
-module.exports.updateAccess_promise = updateAccess_promise;
-module.exports.getTopCameras_promise = getTopCameras_promise;
+module.exports.updateAccess_promise = updateAccess;
+module.exports.getTopCameras_promise = getTopCameras;
+
+module.exports.updateAccess = updateAccess;
+module.exports.getTopCameras = getTopCameras;
 
 // updateAccess_promise("1").done();
 // getTopCameras_promise(10).done(console.log);
