@@ -3,7 +3,6 @@ var request = require('request');
 var crypto  = require("crypto");
 var path    = require("path");
 var fs      = require('fs');
-var Q       = require("q");
 
 const IMAGES_TEMP_FOLDER = "temp";
 const IMAGE_EXTENSION = ".png";
@@ -27,20 +26,18 @@ function generateUniqueName() {
  * @return {Q.promise}       A Q promise that is fulfiled when the image is stored on disk.
  *                             This promise may be rejected due connection problems.
  */
-function getImage_promise(camURL, filename) {
-    var deferred = Q.defer();
-
-    request.head(camURL, function(err, res, body){
-        if (!err && res.statusCode == 200) {
-            request(camURL).pipe(fs.createWriteStream(filename)).on('close', function() {
-                deferred.resolve();
-            });
-        }
-        else
-            deferred.reject(new Error("Error while fetching image from NYC servers."));
-    });
-
-    return deferred.promise;
+function getImage(camURL, filename) {
+    return new Promise((resolve, reject) => {
+        request.head(camURL, function(err, res, body){
+            if (!err && res.statusCode == 200) {
+                request(camURL).pipe(fs.createWriteStream(filename)).on('close', function() {
+                    return resolve();
+                });
+            }
+            else
+                return reject(new Error("Error while fetching image from NYC servers."));
+        });
+    }
 }
 
 /**
@@ -56,18 +53,13 @@ exports.getStreetImages = function(camId) {
     var frameName1 = path.join(__dirname, IMAGES_TEMP_FOLDER, generateUniqueName() + IMAGE_EXTENSION);
     var frameName2 = path.join(__dirname, IMAGES_TEMP_FOLDER, generateUniqueName() + IMAGE_EXTENSION);
 
-    var deferred = Q.defer();
 
-    getImage_promise(cameraURL, frameName1)
-    .delay(DELAY_BETWEEN_FRAMES)
-    .then(function() {
-        return getImage_promise(cameraURL, frameName2);
-    })
-    .then(function() {
-        deferred.resolve([frameName1, frameName2]);
+
+    return getImage(cameraURL, frameName1)
+        .then(() => new Promise((resolve, reject) => setTimeout(() => resolve(), DELAY_BETWEEN_FRAMES)))
+        .then(() => getImage(cameraURL, frameName2))
+        .then(() => [frameName1, frameName2]);
     });
-
-    return deferred.promise;
 }
 
 module.exports = exports;

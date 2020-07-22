@@ -17,7 +17,7 @@ tp.setConnectionConfig({
  *                             was updated. The promise may be refused only if
  *                             there's a network issue or camId is invalid.
  */
-function updateAccess_promise(camId) {
+function updateAccess(camId) {
     return tp.sql("update cameras set accesses = accesses + 1 where id = @id")
     .parameter('id', TYPES.Int, camId)
     .execute();
@@ -35,29 +35,24 @@ function updateAccess_promise(camId) {
  *                         performed on it. This promise may be rejected either
  *                         due to network or SQL faults.
  */
-function getTopCameras_promise(maxRows) {
-    var deferred = Q.defer();
-
+function getTopCameras(maxRows) {
     if (Number(maxRows) !== maxRows || maxRows < 0)
-        deferred.reject(new Error("Invalid parameter maxRows."))
+        Promise.reject(new Error("Invalid parameter maxRows."))
     else {
         //unfortunately tp doesn't allow to use tokens with top. This is unsafe, but since
         //only the programmer is using this method, it's kind of ok
-        tp.sql("select top "+maxRows+" id, accesses from cameras order by accesses desc")
+        return tp.sql("select top "+maxRows+" id, accesses from cameras order by accesses desc")
         .execute()
-        .then(function(rows) {
-            deferred.resolve(rows);
-        })
-        .fail(function (err) {
-            deferred.reject(err);
-        });
     }
 
     return deferred.promise;
 }
 
-module.exports.updateAccess_promise = updateAccess_promise;
-module.exports.getTopCameras_promise = getTopCameras_promise;
+module.exports.updateAccess_promise = updateAccess;
+module.exports.getTopCameras_promise = getTopCameras;
+
+module.exports.updateAccess = updateAccess;
+module.exports.getTopCameras = getTopCameras;
 
 // updateAccess_promise("1").done();
 // getTopCameras_promise(10).done(console.log);
